@@ -1,0 +1,118 @@
+﻿@font-face {
+    font-family: "Latin Modern math";
+    src: url("latinmodern-math.otf") format("truetype");
+}
+
+
+body {
+    background-color: #c19f9f;
+    font-family: "Latin Modern math", sans-serif;
+    font-size: 20px;
+}
+
+#Feladat_lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Feladat_hatter {
+    background-color: #dbdbdb;
+    border-radius: 15px;
+    align-self: center;
+    width: 800px;
+    height: fit-content;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.Valasz {
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 15px;
+    border-width: 2px;
+    resize: none;
+    font-family: "Latin Modern math", sans-serif;
+    font-size: 19px;
+    padding: 19px 10px;
+}
+
+.Ell_gomb {
+    font-family: "Latin Modern math", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: #119f4a;
+    padding: 10px 23px;
+    margin: 4px 7px 4px 0;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.Ell_gomb:hover {
+    border-radius: 1px;
+    background-color: #5fc35f;
+}
+
+.Valasz_label{
+    display: flex;
+    align-items:center;
+    margin: 10px 0;
+}
+
+#H_K_Seged_1a {
+    display: none;
+    max-height: 200px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #f5bfbf;
+    border-radius: 10px;
+}
+
+.Eltunt_elemek {
+    position: relative;
+    overflow: hidden;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 7px 0 90px;
+}
+
+#bezaro {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #f5bfbf;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Valasz_felulet {
+    display: flex;
+    flex-direction: column;
+}
+
+.gomb {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.helyes_valasz {
+    display: none;
+    color: #305e38;
+    font-weight: bold;
+}
+
+.ures_mezo {
+    display: none;
+    color: #831c1c;
+    font-weight: bold;
+}
