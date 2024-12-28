@@ -10,13 +10,13 @@ body {
     font-size: 20px;
 }
 
-#Feladat_lista {
+.Feladat_lista {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#Feladat_hatter {
+.Feladat_hatter {
     background-color: #dbdbdb;
     border-radius: 15px;
     align-self: center;
@@ -25,6 +25,24 @@ body {
     padding: 20px;
     padding-top: 0px;
 }
+
+#Szintek {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#Emelt_gomb, #Kozep_gomb {
+    background-color: #dbdbdb;
+    border-radius: 15px;
+    align-self: center;
+    width: 400px;
+    height: fit-content;
+    padding: 20px;
+    padding-top: 0px;
+}
+
 
 .Valasz {
     width: 100%;

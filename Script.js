@@ -31,3 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
         
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("Kozep_gomb").addEventListener("click", function () {
+        window.location.href = "Kozep.html";
+
+    });
+});
