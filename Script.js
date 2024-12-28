@@ -38,3 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("Emelt_gomb").addEventListener("click", function () {
+        window.location.href = "Emelt.html";
+
+    });
+});

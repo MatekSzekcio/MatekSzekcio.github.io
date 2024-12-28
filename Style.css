@@ -57,6 +57,18 @@ body {
     width: 100%;
 }
 
+#Vonalka {
+    height: 2px;
+    border-width: 0;
+    background-color: #c19f9f;
+}
+
+#Kurzus_valaszto {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0 30px 0;
+}
+
 #Szintek {
     display: flex;
     flex-direction: row;
@@ -72,15 +84,18 @@ body {
     text-align: center;
     opacity: 0.9;
     transition: 1s;
+    font-size: 22px;
 }
 
-#Emelt_gomb:hover, #Kozep_gomb:hover {
-    width: 156px;
-    padding: 63px 0;
-    border-radius: 20px;
-    cursor: pointer;
-    opacity:1;
-}
+    #Emelt_gomb:hover, #Kozep_gomb:hover {
+        background-color: #ad3030;
+        width: 156px;
+        padding: 63px 0;
+        border-radius: 20px;
+        cursor: pointer;
+        opacity: 1;
+        font-size: 23px;
+    }
 
 .Valasz {
     width: 50%;
