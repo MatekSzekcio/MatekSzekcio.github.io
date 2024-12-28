@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+
+<html lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T2M9X45N');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8" />
+    <title>Matematika Feladatsor</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            "HTML-CSS": {
+                availableFonts: [],
+                webFont: "Latin-Modern",
+                fonts: ["Latin-Modern"]
+            },
+            SVG: {
+                font: "Latin-Modern"
+            }
+        });
+    </script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+
+</head>
+<body>
+    <div id="Feladat_lista">
+        <div id="Feladat_hatter">
+            <h1 style="text-align:center">Halmazok középszint</h1>
+            <h2>1. feladat</h2>
+            <p>
+                Tudjuk, hogy $A\{1;3;4;7;9;11;18\}$, $B\{2;4;6;8;10;12;14;16;18\}$, $C\{1;2;3;4;5;6;7;8;9\}$.
+                Sorold fel a következő halmazműveletek eredményeit:
+            </p>
+            <p>a) $A\cap B$</p>
+            <div class="Valasz_felulet">
+                <p class="Valasz_label">
+                    $A\cap B=$ <textarea class="Valasz" id="H_K_Valasz_1a" placeholder="Válasz..." rows="1"></textarea> <br>
+                </p>
+                <div class="Eltunt_elemek">
+                    <div id="H_K_Seged_1a">
+                        <button id="bezaro">x</button>
+                        Azokat az elemeket kell venni, amelyek benne vannak <i>A</i> és <i>B</i> halmazokban is.<br/>
+                        <b>A helyes válasz: $4;18$</b>
+                    </div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_1a">A mező nem lehet üres!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_1a">Helyes válasz!</div>
+                </div>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="H_K_Ell_1a">Ellenőrzés</button>
+                </div>
+            </div>
+            <p>b) $B$ \ $C$</p>
+            <p>c) $A\cap(B$ \ $C)$</p>
+            <p>d) $\overline{A}\cup \overline{B}$</p>
+            <h2>2. feladat</h2>
+            <p>
+                Tudjuk, hogy $|A\cap B|=4, |A$ \ $B|=2, |A\cup B|=9$. Mennyi $|A|$ és $|B|$?
+            </p>
+            <h2>3. feladat</h2>
+            <p>
+                Egy 12 fős krampusz gárdában 7-en rendelkeznek vasvillával, 4-en virgáccsal,
+                egyedül a fő krampusznak van mindkettő. Hány olyan krampusz van a gárdában, akinek semmije sincs?
+            </p>
+            <h2>4. feladat</h2>
+            <p>
+                Egy matematika versenyen két feladatot tűztek ki. Az első feladatot az indulók 60%-a,
+                a másodikat pedig az indulók 50%-a oldotta meg. Minden résztvevő megoldott legalább egy feladatot,
+                mindkét feladatot 3 tanuló oldotta meg. Hányan indulhattak a versenyen?
+            </p>
+            <h2>5. feladat</h2>
+            <p>
+                Egy középiskolába 620 tanuló jár. Az SG-sek az iskolanapra három kiadványt vittek:
+                I. Töri kiadvány II. Közgáz kiadvány III. Matek kiadvány. Később felmérték, hogy ezeknek a kiadványoknak milyen volt az olvasottsága.
+                A Töri kiadványt a tanulók 25%-a, a Közgáz kiadványt 40%-a, a Matek kiadványt pedig 45%-a olvasta.
+                Az első két kiadványt a tanulók 10%-a, az első és harmadik kiadványt 20%-a, a másodikat és harmadikat 25%-a, mindhármat pedig 5%-a olvasta.
+            </p>
+            <p>a) Hányan olvasták mindhárom kiadványt? </p>
+            <p>b) Venn-diagrammal szemléltesd a kiadványok olvasottságát az adott iskolában!</p>
+            <h2>6. feladat</h2>
+            <p>
+                Egy iskola egyik 30 fős osztályáról tudjuk, hogy 8 diák olvasta A Gyűrük Ura első részét, 17-en a második részét,
+                15-en pedig a harmadik részét. Az első és második részt 6-an, az második és a harmadik részt 2-en,
+                az első és a harmadik részt pedig 4-en olvasták. Hányan olvasták mind a három könyvet? Hányan olvasták csak a harmadik részt?
+            </p>
+            <h2>7. feladat</h2>
+            <p>
+                Két intervallumról az adatok ismertek: $A$ \ $B=[0;12[;$ $A\cap B=[12;20 ]$ és
+                $A\cup B = [0;50]$. Írd fel ezek alapján <i>A</i> és <i>B</i> intervallumokat!
+            </p>
+            <h2>8. feladat</h2>
+            <p>
+                Legyen a $H$ alaphalmaz $H=[-5;15]$, továbbá $A=[-2;7]$, $B=[1;10]$, $C=]6;11[$.
+                Határozd meg az alábbi halmazokat:
+                $A\cup B$; $(A\cap B)\cup C$; $\overline{A}\cap (\overline{B}\cup C)$!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
