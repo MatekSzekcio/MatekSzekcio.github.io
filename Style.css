@@ -8,6 +8,22 @@ body {
     background-color: #c19f9f;
     font-family: "Latin Modern math", sans-serif;
     font-size: 20px;
+    text-align: justify;
+}
+
+#Elso_oldal {
+    background-color: #dbdbdb;
+    border-radius: 15px;
+    width: 800px;
+    height: fit-content;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+#Elso_oldal_hatter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Feladat_lista {
@@ -26,33 +42,56 @@ body {
     padding-top: 0px;
 }
 
+#Koszonto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 40px 40px;
+}
+
+#Alairas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
 #Szintek {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
 }
 
 #Emelt_gomb, #Kozep_gomb {
-    background-color: #dbdbdb;
-    border-radius: 15px;
-    align-self: center;
-    width: 400px;
-    height: fit-content;
-    padding: 20px;
-    padding-top: 0px;
+    background-color: #c34040;
+    border-radius: 30px;
+    width: 150px;
+    padding: 60px 0;
+    text-align: center;
+    opacity: 0.9;
+    transition: 1s;
 }
 
+#Emelt_gomb:hover, #Kozep_gomb:hover {
+    width: 156px;
+    padding: 63px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity:1;
+}
 
 .Valasz {
-    width: 100%;
+    width: 50%;
     border-radius: 5px;
-    margin-left: 15px;
     border-width: 2px;
     resize: none;
+    height: 30px;
     font-family: "Latin Modern math", sans-serif;
     font-size: 19px;
-    padding: 19px 10px;
+    padding: 0 2px;
+    margin-top: 3px;
 }
 
 .Ell_gomb {
@@ -100,6 +139,11 @@ body {
     margin: 0 7px 0 90px;
 }
 
+.Kerdes_elemek{
+    display:flex;
+    flex-direction:row;
+}
+
 #bezaro {
     position: absolute;
     top: 2px;
@@ -133,4 +177,19 @@ body {
     display: none;
     color: #831c1c;
     font-weight: bold;
+}
+
+#blurryText {
+    transition: filter 0.3s ease;
+    filter: blur(5px);
+    display: inline;
+}
+
+    #blurryText:hover {
+        filter: blur(0);
+    }
+
+.xd{
+    display: inline;
+    font-size: 30px;
 }
