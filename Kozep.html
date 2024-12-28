@@ -45,7 +45,8 @@
             <h2>1. feladat</h2>
             <p>
                 Tudjuk, hogy $A\{1;3;4;7;9;11;18\}$, $B\{2;4;6;8;10;12;14;16;18\}$, $C\{1;2;3;4;5;6;7;8;9\}$.
-                Sorold fel a következő halmazműveletek eredményeit:
+                Az alaphalmaz a három halmaz úniója.
+                Pontosvesszővel elválasztva, növekvő sorrendben (pl.: 1; 2; 3) sorold fel a következő halmazműveletek eredményeit:
             </p>
             <p>a) $A\cap B$</p>
             <div class="Valasz_felulet">
@@ -57,7 +58,7 @@
                 <div class="Eltunt_elemek">
                     <div id="H_K_Seged_1a">
                         <button id="bezaro">x</button>
-                        Azokat az elemeket kell venni, amelyek benne vannak <i>A</i> és <i>B</i> halmazokban is.<br/>
+                        Azokat az elemeket kell venni, amelyek benne vannak <i>A</i> és <i>B</i> halmazokban is.<br />
                         <b>A helyes válasz:</b> <div id="blurryText">$4;18$</div>
                     </div>
                     <div class="ures_mezo" id="H_K_ures_mezo_1a">A mező nem lehet üres!</div>
@@ -67,12 +68,12 @@
                     <button class="Ell_gomb" id="H_K_Ell_1a">Ellenőrzés</button>
                 </div>
             </div>
-            <p>b) $B$ \ $C$</p>
-            <p>c) $A\cap(B$ \ $C)$</p>
-            <p>d) $\overline{A}\cup \overline{B}$</p>
+            <p>b) $B \setminus C$</p>
+            <p>c) $A\cap(B \setminus C)$</p>
+            <p>d) $\overline{A}\cup B$</p>
             <h2>2. feladat</h2>
             <p>
-                Tudjuk, hogy $|A\cap B|=4, |A$ \ $B|=2, |A\cup B|=9$. Mennyi $|A|$ és $|B|$?
+                Tudjuk, hogy $|A\cap B|=4, |A \setminus B|=2, |A\cup B|=9$. Mennyi $|A|$ és $|B|$?
             </p>
             <h2>3. feladat</h2>
             <p>
@@ -87,30 +88,57 @@
             </p>
             <h2>5. feladat</h2>
             <p>
-                Egy középiskolába 620 tanuló jár. Az SG-sek az iskolanapra három kiadványt vittek:
-                I. Töri kiadvány II. Közgáz kiadvány III. Matek kiadvány. Később felmérték, hogy ezeknek a kiadványoknak milyen volt az olvasottsága.
-                A Töri kiadványt a tanulók 25%-a, a Közgáz kiadványt 40%-a, a Matek kiadványt pedig 45%-a olvasta.
-                Az első két kiadványt a tanulók 10%-a, az első és harmadik kiadványt 20%-a, a másodikat és harmadikat 25%-a, mindhármat pedig 5%-a olvasta.
+                Egy iskola egyik 30 fős osztályáról tudjuk, hogy 8 diák olvasta A Gyűrűk Ura első részét, 17-en a második részét,
+                15-en pedig a harmadik részét. Az első és második részt 6-an, az második és a harmadik részt 2-en,
+                az első és a harmadik részt pedig 4-en olvasták. Mindegyik diák olvasta legalább az egyik könyvet.
+                Hányan olvasták mind a három könyvet? Hányan olvasták csak a harmadik részt?
             </p>
-            <p>a) Hányan olvasták mindhárom kiadványt? </p>
-            <p>b) Venn-diagrammal szemléltesd a kiadványok olvasottságát az adott iskolában!</p>
             <h2>6. feladat</h2>
             <p>
-                Egy iskola egyik 30 fős osztályáról tudjuk, hogy 8 diák olvasta A Gyűrük Ura első részét, 17-en a második részét,
-                15-en pedig a harmadik részét. Az első és második részt 6-an, az második és a harmadik részt 2-en,
-                az első és a harmadik részt pedig 4-en olvasták. Hányan olvasták mind a három könyvet? Hányan olvasták csak a harmadik részt?
+                Két intervallumról az alábbi adatok ismertek: $A \setminus B=[0;12[;$ $A\cap B=[12;20 ]$ és
+                $A\cup B = [0;50]$. Írd fel ezek alapján <i>A</i> és <i>B</i> intervallumokat!
             </p>
             <h2>7. feladat</h2>
             <p>
-                Két intervallumról az adatok ismertek: $A$ \ $B=[0;12[;$ $A\cap B=[12;20 ]$ és
-                $A\cup B = [0;50]$. Írd fel ezek alapján <i>A</i> és <i>B</i> intervallumokat!
-            </p>
-            <h2>8. feladat</h2>
-            <p>
-                Legyen a $H$ alaphalmaz $H=[-5;15]$, továbbá $A=[-2;7]$, $B=[1;10]$, $C=]6;11[$.
+                Legyen a $H$ alaphalmaz $H=[-5;15]$, továbbá $A=[-2;7]$, $B=]1;10]$, $C=]6;11[$.
                 Határozd meg az alábbi halmazokat:
-                $A\cup B$; $(A\cap B)\cup C$; $\overline{A}\cap (\overline{B}\cup C)$!
             </p>
+            <p>a) $A\cup B$</p>
+            <p>b) $(A\cap B)\cup C$</p>
+            <p>c) $\overline{A}\cap (\overline{B}\cup C)$!</p>
+        </div>
+    </div>
+    <div class="Feladat_lista">
+        <div class="Feladat_hatter">
+            <h1 style="text-align:center">Logika középszint</h1>
+            <h2>1. Feladat</h2>
+            <p>Döntsd el az alábbi mondatokról, hogy ítéletek-e vagy sem!</p>
+            <p>a) A Tesla nem gyárt szép autókat.</p>
+            <p>b) Egy nap 24 órából áll.</p>
+            <p>c) Norvégia az észak-európai országok egyike.</p>
+            <p>d) A legfinomabb étel a chilis bab.</p>
+            <h2>2. Feladat</h2>
+            <p>Fogalmazd meg az alábbi állítások tagadásait!</p>
+            <p>a) Minden érettségi feladat egyszerű.</p>
+            <p>b) Van olyan háztartás, amelyben nem található TV.</p>
+            <p>c) Minden gyerek szereti a csokit.</p>
+            <p>d) Van olyan diák, aki nem szeret halmazos feladatokat megoldani.</p>
+            <h2>3. Feladat</h2>
+            <p>Állapítsd meg, hogy az alábbi állításokban milyen logikai műveletek találhatóak!</p>
+            <p>a) Marci nem szeret snowboardozni.</p>
+            <p>b) Bazsa imád programozni és matekozni is.</p>
+            <p>c) Zsófi felveszi a bal vagy a jobb zokniját, de lehet mindkettőt.</p>
+            <p>d) Hanna vagy sportautóval, vagy sportmotorral jár haza.</p>
+            <p>e) Ha akad időm és energiám, akkor elmegyek edzeni.</p>
+            <p>f) Egy háromszög akkor és csak akkor derékszögű, ha befogóinak négyzetösszege megegyezik az átfogó négyzetével.</p>
+            <h2>4. Feladat</h2>
+            <p>Nóri, Lívi és Réka egy rablás gyanúsítottjai. A tárgyaláson a következő fejlemények láttak napvilágot:</p>
+            <p>a) Vagy Réka ártatlan, vagy Lívi bűnös.</p>
+            <p>b) Ha Lívi bűnös, Réka ártatlan.</p>
+            <p>c) Nóri és Réka sosem dolgoznak együtt, és Nóri soha nem dolgozik egyedül.</p>
+            <p>d) Ha Lívi bűnös, akkor Nóri is az.</p>            
+            <p>Ki, vagy kik lehettek a rablás elkövetői?</p>
+
         </div>
     </div>
 </body>
