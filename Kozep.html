@@ -48,51 +48,211 @@
                 Az alaphalmaz a három halmaz úniója.
                 Pontosvesszővel elválasztva, növekvő sorrendben (pl.: 1; 2; 3) sorold fel a következő halmazműveletek eredményeit:
             </p>
-            <p>a) $A\cap B$</p>
             <div class="Valasz_felulet">
                 <div class="Kerdes_elemek">
                     <p class="Valasz_label">
-                        $A\cap B=$ <div class="xd">{</div><textarea class="Valasz" id="H_K_Valasz_1a" placeholder="Válasz..." rows="1"></textarea><div class="xd">}</div> <br>
+                        $A\cap B=$
                     </p>
+                    <div class="Kapcsos_zarojel">{</div><textarea class="Valasz" id="H_K_Valasz_1a" placeholder="Válasz..." rows="1"></textarea><div class="Kapcsos_zarojel">}</div> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_K_Ell_1a">Ellenőrzés</button>
+                    </div>
                 </div>
                 <div class="Eltunt_elemek">
-                    <div id="H_K_Seged_1a">
-                        <button id="bezaro">x</button>
-                        Azokat az elemeket kell venni, amelyek benne vannak <i>A</i> és <i>B</i> halmazokban is.<br />
-                        <b>A helyes válasz:</b> <div id="blurryText">$4;18$</div>
+                    <div class="Seged_feluletek" id="H_K_Seged_1a">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_1a">x</button>
+                        Minden, ami <i>A</i> és <i>B</i> halmaz eleme is.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$4;18$</div>
                     </div>
                     <div class="ures_mezo" id="H_K_ures_mezo_1a">A mező nem lehet üres!</div>
                     <div class="helyes_valasz" id="H_K_helyes_valasz_1a">Helyes válasz!</div>
                 </div>
-                <div class="gomb">
-                    <button class="Ell_gomb" id="H_K_Ell_1a">Ellenőrzés</button>
+            </div>
+            <div class="Valasz_felulet">
+                <div class="Kerdes_elemek">
+                    <p class="Valasz_label">
+                        $B \setminus C=$
+                    </p>
+                    <div class="Kapcsos_zarojel">{</div><textarea class="Valasz" id="H_K_Valasz_1b" placeholder="Válasz..." rows="1"></textarea><div class="Kapcsos_zarojel">}</div> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_K_Ell_1b">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_K_Seged_1b">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_1b">x</button>
+                        Minden, ami <i>B</i> halmaznak eleme, de <i>C</i>-nek nem.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$10; 12; 14; 16; 18$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_1b">A mező nem lehet üres!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_1b">Helyes válasz!</div>
                 </div>
             </div>
-            <p>b) $B \setminus C$</p>
-            <p>c) $A\cap(B \setminus C)$</p>
-            <p>d) $\overline{A}\cup B$</p>
+            <div class="Valasz_felulet">
+                <div class="Kerdes_elemek">
+                    <p class="Valasz_label">
+                        $A\cap(B \setminus C)=$
+                    </p>
+                    <div class="Kapcsos_zarojel">{</div><textarea class="Valasz" id="H_K_Valasz_1c" placeholder="Válasz..." rows="1"></textarea><div class="Kapcsos_zarojel">}</div> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_K_Ell_1c">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_K_Seged_1c">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_1c">x</button>
+                        Minden, ami <i>B</i> halmaznak eleme, de <i>C</i>-nek nem, és <i>A</i> halmaznak
+                        is eleme. Vagyis <i>A</i> és <i>B</i> kettes metszete. Érdemes rajzot készíteni.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$18$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_1c">A mező nem lehet üres!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_1c">Helyes válasz!</div>
+                </div>
+            </div>
+            <div class="Valasz_felulet">
+                <div class="Kerdes_elemek" style="height: 44px;">
+                    <p class="Valasz_label">
+                        $\overline{A}\cup B=$
+                    </p>
+                    <div class="Kapcsos_zarojel">{</div><textarea class="Valasz" id="H_K_Valasz_1d" placeholder="Válasz..." rows="1"></textarea><div class="Kapcsos_zarojel">}</div> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_K_Ell_1d">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_K_Seged_1d">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_1d">x</button>
+                        Minden, ami <i>A</i> halmaznak nem eleme, de <i>B</i> halmaznak eleme. $B\setminus A$-ként is felírható.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$2; 6; 8; 10; 12; 14; 16$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_1d">A mező nem lehet üres!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_1d">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>2. feladat</h2>
             <p>
                 Tudjuk, hogy $|A\cap B|=4, |A \setminus B|=2, |A\cup B|=9$. Mennyi $|A|$ és $|B|$?
             </p>
+            <div class="Valasz_felulet">
+                <div class="Kerdes_elemek">
+                    <p class="Valasz_label">
+                        $|A|=$
+                    </p>
+                    <textarea class="Valasz" id="H_K_Valasz_2a" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <p class="Valasz_label">
+                        $|B|=$
+                    </p>
+                    <textarea class="Valasz" id="H_K_Valasz_2b" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_K_Ell_2">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_K_Seged_2">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_2">x</button>
+                        Érdemes Venn diagramon ábrázolni, csak <i>A</i> 2 elem, a metszetben
+                        4 elem lesz, összesen 9 elem kell. Csak <i>B</i> elemei: 9-2-4=3.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$|A|=6, |B|=7$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_2">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="H_K_szam_check_2">Csak nemnegatív egész számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_2">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>3. feladat</h2>
             <p>
                 Egy 12 fős krampusz gárdában 7-en rendelkeznek vasvillával, 4-en virgáccsal,
                 egyedül a fő krampusznak van mindkettő. Hány olyan krampusz van a gárdában, akinek semmije sincs?
             </p>
+            <div class="Valasz_felulet">
+                <div class="Kerdes_elemek">
+                    <p class="Valasz_label">
+                        $|A|=$
+                    </p>
+                    <textarea class="Valasz" id="H_K_Valasz_3" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_K_Ell_3">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_K_Seged_3">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_3">x</button>
+                        Érdemes Venn diagramon ábrázolni, 6 krampusznak van csak vasvillája,
+                        3-nak csak virgácsa, egynek mindkettő, így 10-en vannak azok, akik
+                        birtokolják valamelyiket. (Logikai szita formula is alkalmazható: 7+4-1=10)<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$2$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_3">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="H_K_szam_check_3">Csak nemnegatív egész számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_3">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>4. feladat</h2>
             <p>
                 Egy matematika versenyen két feladatot tűztek ki. Az első feladatot az indulók 60%-a,
                 a másodikat pedig az indulók 50%-a oldotta meg. Minden résztvevő megoldott legalább egy feladatot,
                 mindkét feladatot 3 tanuló oldotta meg. Hányan indulhattak a versenyen?
             </p>
+            <div class="Valasz_felulet">
+                <div class="Kerdes_elemek">
+                    <p class="Valasz_label">
+                        Résztvevők száma:
+                    </p>
+                    <textarea class="Valasz" id="H_K_Valasz_4" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_K_Ell_4">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_K_Seged_4">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_4">x</button>
+                        Ha $x$ versenyző volt összesen, akkor a logikai szita formula segítségével:
+                        $0,6x+0,5x-3=x$. Az egyenletet rendezve: $x=30$.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$30$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_4">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="H_K_szam_check_4">Csak nemnegatív egész számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_4">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>5. feladat</h2>
             <p>
                 Egy iskola egyik 30 fős osztályáról tudjuk, hogy 8 diák olvasta A Gyűrűk Ura első részét, 17-en a második részét,
                 15-en pedig a harmadik részét. Az első és második részt 6-an, az második és a harmadik részt 2-en,
                 az első és a harmadik részt pedig 4-en olvasták. Mindegyik diák olvasta legalább az egyik könyvet.
-                Hányan olvasták mind a három könyvet? Hányan olvasták csak a harmadik részt?
             </p>
+            <div class="Valasz_felulet">
+                <p class="Valasz_label">
+                    a) Hányan olvasták mind a három könyvet?<br />
+                </p>
+                <div class="Kerdes_elemek">
+                    <textarea class="Valasz" id="H_K_Valasz_5a" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_K_Ell_5">Ellenőrzés</button>
+                    </div>
+                </div>
+                <p class="Valasz_label">
+                        b) Hányan olvasták csak a harmadik részt?<br />
+                </p>
+                <div class="Kerdes_elemek">
+                    <textarea class="Valasz" id="H_K_Valasz_5b" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_K_Ell_5">Ellenőrzés</button>
+                    </div>
+                </div>
+
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_K_Seged_5">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_2">x</button>
+                        Érdemes Venn diagramon ábrázolni, csak <i>A</i> 2 elem, a metszetben
+                        4 elem lesz, összesen 9 elem kell. Csak <i>B</i> elemei: 9-2-4=3.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$|A|=6, |B|=7$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_5">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="H_K_szam_check_5">Csak nemnegatív egész számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_5">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>6. feladat</h2>
             <p>
                 Két intervallumról az alábbi adatok ismertek: $A \setminus B=[0;12[;$ $A\cap B=[12;20 ]$ és

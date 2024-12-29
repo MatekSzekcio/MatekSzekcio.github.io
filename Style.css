@@ -99,7 +99,7 @@ body {
     }
 
 .Valasz {
-    width: 50%;
+    width: 55%;
     border-radius: 5px;
     border-width: 2px;
     resize: none;
@@ -107,7 +107,22 @@ body {
     font-family: "Latin Modern math", sans-serif;
     font-size: 19px;
     padding: 0 2px;
-    margin-top: 3px;
+    margin-top: 5px;
+}
+
+#H_K_Valasz_1c {
+    width: 48%;
+}
+
+#H_K_Valasz_2a, #H_K_Valasz_2b, #H_K_Valasz_3, #H_K_Valasz_4 {
+    width: 20%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.gomb {
+    display: flex;
+    margin-left: auto;
 }
 
 .Ell_gomb {
@@ -120,7 +135,6 @@ body {
     color: white;
     background-color: #119f4a;
     padding: 10px 23px;
-    margin: 4px 7px 4px 0;
     border: none;
     border-radius: 4px;
     transition-duration: 0.5s;
@@ -138,7 +152,13 @@ body {
     margin: 10px 0;
 }
 
-#H_K_Seged_1a {
+.Kapcsos_zarojel {
+    display: inline;
+    font-size: 30px;
+    margin-top: 3px;
+}
+
+.Seged_feluletek {
     display: none;
     max-height: 200px;
     padding: 20px;
@@ -158,9 +178,10 @@ body {
 .Kerdes_elemek{
     display:flex;
     flex-direction:row;
+    margin-top: 10px;
 }
 
-#bezaro {
+.Bezaro_gombok {
     position: absolute;
     top: 2px;
     right: 2px;
@@ -178,34 +199,23 @@ body {
     flex-direction: column;
 }
 
-.gomb {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .helyes_valasz {
     display: none;
     color: #305e38;
     font-weight: bold;
 }
 
-.ures_mezo {
+.ures_mezo, .szam_check {
     display: none;
     color: #831c1c;
     font-weight: bold;
 }
-
-#blurryText {
+.blurryText {
     transition: filter 0.3s ease;
     filter: blur(5px);
     display: inline;
 }
 
-    #blurryText:hover {
+    .blurryText:hover {
         filter: blur(0);
     }
-
-.xd{
-    display: inline;
-    font-size: 30px;
-}
