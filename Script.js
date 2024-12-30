@@ -182,21 +182,29 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("H_K_Ell_3").addEventListener("click", function () {
 
-        const textareaValue = document.getElementById("H_K_Valasz_1a").value.trim();
-        const segedElem = document.getElementById("H_K_Seged_1a");
-        const uresElem = document.getElementById("H_K_ures_mezo_1a");
-        const valaszElem = document.getElementById("H_K_helyes_valasz_1a");
+//Közép halmazok 5. feladat
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("H_K_Ell_5a").addEventListener("click", function () {
+
+        const textareaValue = document.getElementById("H_K_Valasz_5a").value.trim();
+        const segedElem = document.getElementById("H_K_Seged_5a");
+        const uresElem = document.getElementById("H_K_ures_mezo_5a");
+        const szam_checkElem = document.getElementById("H_K_szam_check_5a");
+        const valaszElem = document.getElementById("H_K_helyes_valasz_5a");
+        const number = Number(textareaValue);
         uresElem.style.display = "none";
         valaszElem.style.display = "none";
         segedElem.style.display = "none";
+        szam_checkElem.style.display = "none";
 
-        const regex = /^4; 18$/;
+        const regex = /^2$/;
 
         if (textareaValue === "") {
             uresElem.style.display = "flex";
+        } else if (isNaN(Number(textareaValue)) || number < 0) {
+            szam_checkElem.style.display = "flex";
         } else if (regex.test(textareaValue)) {
             valaszElem.style.display = "flex";
         } else {
@@ -204,6 +212,121 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("H_K_Ell_5b").addEventListener("click", function () {
+
+        const textareaValue = document.getElementById("H_K_Valasz_5b").value.trim();
+        const segedElem = document.getElementById("H_K_Seged_5b");
+        const uresElem = document.getElementById("H_K_ures_mezo_5b");
+        const szam_checkElem = document.getElementById("H_K_szam_check_5b");
+        const valaszElem = document.getElementById("H_K_helyes_valasz_5b");
+        const number = Number(textareaValue);
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+        szam_checkElem.style.display = "none";
+
+        const regex = /^11$/;
+
+        if (textareaValue === "") {
+            uresElem.style.display = "flex";
+        } else if (isNaN(Number(textareaValue)) || number < 0) {
+            szam_checkElem.style.display = "flex";
+        } else if (regex.test(textareaValue)) {
+            valaszElem.style.display = "flex";
+        } else {
+            segedElem.style.display = "block";
+        }
+    });
+});
+
+//Közép halmazok 6. feladat
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("H_K_Ell_6").addEventListener("click", function () {
+        const selectedOption = document.querySelector('input[name="H_K_6_feladat"]:checked');
+        const segedElem = document.getElementById("H_K_Seged_6");
+        const uresElem = document.getElementById("H_K_ures_mezo_6");
+        const valaszElem = document.getElementById("H_K_helyes_valasz_6");
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+
+        if (!selectedOption) {
+            uresElem.style.display = "flex";
+        }
+        if (selectedOption.value === "correct") {
+            valaszElem.style.display = "flex";
+        } else {
+            segedElem.style.display = "block";
+        }
+    });
+});
+
+//Közép halmazok 7. feladat
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("H_K_Ell_7a").addEventListener("click", function () {
+        const selectedOption = document.querySelector('input[name="H_K_7a_feladat"]:checked');
+        const segedElem = document.getElementById("H_K_Seged_7a");
+        const uresElem = document.getElementById("H_K_ures_mezo_7a");
+        const valaszElem = document.getElementById("H_K_helyes_valasz_7a");
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+
+        if (!selectedOption) {
+            uresElem.style.display = "flex";
+        }
+        if (selectedOption.value === "correct") {
+            valaszElem.style.display = "flex";
+        } else {
+            segedElem.style.display = "block";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("H_K_Ell_7b").addEventListener("click", function () {
+        const selectedOption = document.querySelector('input[name="H_K_7b_feladat"]:checked');
+        const segedElem = document.getElementById("H_K_Seged_7b");
+        const uresElem = document.getElementById("H_K_ures_mezo_7b");
+        const valaszElem = document.getElementById("H_K_helyes_valasz_7b");
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+
+        if (!selectedOption) {
+            uresElem.style.display = "flex";
+        }
+        if (selectedOption.value === "correct") {
+            valaszElem.style.display = "flex";
+        } else {
+            segedElem.style.display = "block";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("H_K_Ell_7c").addEventListener("click", function () {
+        const selectedOption = document.querySelector('input[name="H_K_7c_feladat"]:checked');
+        const segedElem = document.getElementById("H_K_Seged_7c");
+        const uresElem = document.getElementById("H_K_ures_mezo_7c");
+        const valaszElem = document.getElementById("H_K_helyes_valasz_7c");
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+
+        if (!selectedOption) {
+            uresElem.style.display = "flex";
+        }
+        if (selectedOption.value === "correct") {
+            valaszElem.style.display = "flex";
+        } else {
+            segedElem.style.display = "block";
+        }
+    });
+});
+
 
 //Halmazok közép bezáró gombok
 document.addEventListener("DOMContentLoaded", function () {
@@ -257,6 +380,54 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("H_K_Bezaro_4").addEventListener("click", function () {
         const segedElem = document.getElementById("H_K_Seged_4");
+        segedElem.style.display = "none";
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("H_K_Bezaro_5a").addEventListener("click", function () {
+        const segedElem = document.getElementById("H_K_Seged_5a");
+        segedElem.style.display = "none";
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("H_K_Bezaro_5b").addEventListener("click", function () {
+        const segedElem = document.getElementById("H_K_Seged_5b");
+        segedElem.style.display = "none";
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("H_K_Bezaro_6").addEventListener("click", function () {
+        const segedElem = document.getElementById("H_K_Seged_6");
+        segedElem.style.display = "none";
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("H_K_Bezaro_7a").addEventListener("click", function () {
+        const segedElem = document.getElementById("H_K_Seged_7a");
+        segedElem.style.display = "none";
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("H_K_Bezaro_7b").addEventListener("click", function () {
+        const segedElem = document.getElementById("H_K_Seged_7b");
+        segedElem.style.display = "none";
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("H_K_Bezaro_7c").addEventListener("click", function () {
+        const segedElem = document.getElementById("H_K_Seged_7c");
         segedElem.style.display = "none";
 
     });

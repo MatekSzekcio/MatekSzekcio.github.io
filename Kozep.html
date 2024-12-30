@@ -228,29 +228,41 @@
                 <div class="Kerdes_elemek">
                     <textarea class="Valasz" id="H_K_Valasz_5a" placeholder="Válasz..." rows="1"></textarea> <br>
                     <div class="gomb">
-                        <button class="Ell_gomb" id="H_K_Ell_5">Ellenőrzés</button>
+                        <button class="Ell_gomb" id="H_K_Ell_5a">Ellenőrzés</button>
                     </div>
                 </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_K_Seged_5a">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_5a">x</button>
+                        Ha $x$ azok száma, akik mindhármat olvasták, akkor a logikai
+                        szita formulát a következőképpen alkalmazhatjuk: $8+17+15-6-2-4+x=30$.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$2$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_5a">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="H_K_szam_check_5a">Csak nemnegatív egész számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_5a">Helyes válasz!</div>
+                </div>
                 <p class="Valasz_label">
-                        b) Hányan olvasták csak a harmadik részt?<br />
+                    b) Hányan olvasták csak a harmadik részt?<br />
                 </p>
                 <div class="Kerdes_elemek">
                     <textarea class="Valasz" id="H_K_Valasz_5b" placeholder="Válasz..." rows="1"></textarea> <br>
                     <div class="gomb">
-                        <button class="Ell_gomb" id="H_K_Ell_5">Ellenőrzés</button>
+                        <button class="Ell_gomb" id="H_K_Ell_5b">Ellenőrzés</button>
                     </div>
                 </div>
 
                 <div class="Eltunt_elemek">
-                    <div class="Seged_feluletek" id="H_K_Seged_5">
-                        <button class="Bezaro_gombok" id="H_K_Bezaro_2">x</button>
-                        Érdemes Venn diagramon ábrázolni, csak <i>A</i> 2 elem, a metszetben
-                        4 elem lesz, összesen 9 elem kell. Csak <i>B</i> elemei: 9-2-4=3.<br />
-                        <b>A helyes válasz:</b> <div class="blurryText">$|A|=6, |B|=7$</div>
+                    <div class="Seged_feluletek" id="H_K_Seged_5b">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_5b">x</button>
+                        Érdemes Venn diagramon ábrázolni, így a hármas metszet 2, az
+                        első és harmadik rész kettes metszetében 2 fő van, a második és
+                        harmadik rész kettes metszetében 0, így $15-2-2-0=11$.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$11$</div>
                     </div>
-                    <div class="ures_mezo" id="H_K_ures_mezo_5">A mező nem lehet üres!</div>
-                    <div class="szam_check" id="H_K_szam_check_5">Csak nemnegatív egész számokat adhatsz meg!</div>
-                    <div class="helyes_valasz" id="H_K_helyes_valasz_5">Helyes válasz!</div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_5b">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="H_K_szam_check_5b">Csak nemnegatív egész számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_5b">Helyes válasz!</div>
                 </div>
             </div>
             <h2>6. feladat</h2>
@@ -258,14 +270,141 @@
                 Két intervallumról az alábbi adatok ismertek: $A \setminus B=[0;12[;$ $A\cap B=[12;20 ]$ és
                 $A\cup B = [0;50]$. Írd fel ezek alapján <i>A</i> és <i>B</i> intervallumokat!
             </p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_K_6_feladat" value="wrong" class="H_K_Radio" />
+                    <p> $A=[0;20], B=]12;50]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_K_6_feladat" value="wrong" class="H_K_Radio" />
+                    <p> $A=]12;20], B=[12;50]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_K_6_feladat" value="correct" class="H_K_Radio" />
+                    <p>$A=[0;20], B=[12;50]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="H_K_6_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$A=[0;12], B=[20;50]$</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_K_Ell_6">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_K_Seged_6">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_6">x</button>
+                        Érdemes számegyenesen ábrázolni, metszet: ahol $A$ és $B$ is
+                        szerepel, unió: ahol legalább az egyik szerepel, $A\setminus B$:
+                        ahol csak A szerepel.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$A=[0;20], B=[12;50]$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_6">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_6">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>7. feladat</h2>
             <p>
                 Legyen a $H$ alaphalmaz $H=[-5;15]$, továbbá $A=[-2;7]$, $B=]1;10]$, $C=]6;11[$.
                 Határozd meg az alábbi halmazokat:
             </p>
-            <p>a) $A\cup B$</p>
-            <p>b) $(A\cap B)\cup C$</p>
-            <p>c) $\overline{A}\cap (\overline{B}\cup C)$!</p>
+            <p style="margin-bottom:0;">a) $A\cup B$</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_K_7a_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$]1; 7]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_K_7a_feladat" value="wrong" class="H_K_Radio" />
+                    <p> $[-2; 1]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_K_7a_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$[7; 10]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="H_K_7a_feladat" value="correct" class="H_K_Radio" />
+                    <p>$[-2; 10]$</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_K_Ell_7a">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_K_Seged_7a">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_7a">x</button>
+                        Minden, ami legalább $A$ vagy $B$ halmaznak eleme.
+                        Számegyenesen való ábrázolás segíthet.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$[-2; 10]$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_7a">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_7a">Helyes válasz!</div>
+                </div>
+            </div>
+            <p style="margin-bottom:0;">b) $(A\cap B)\cup C$</pstyle="margin-bottom:0;">
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_K_7b_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$[-2; 11[$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_K_7b_feladat" value="correct" class="H_K_Radio" />
+                    <p> $]1; 11]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_K_7b_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$]6; 10]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="H_K_7b_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$]-2; 10[$</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_K_Ell_7b">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_K_Seged_7b">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_7b">x</button>
+                        A metszet $B$ minden, ami $A$-nak és $B$-nek is eleme, vagyis $]1;7]$,
+                        ennek az uniója $C$-vel minden, ami legalább az egyiknek eleme.
+                        Számegyenesen való ábrázolás segíthet.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$]1; 11]$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_7b">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_7b">Helyes válasz!</div>
+                </div>
+            </div>
+            <p style="margin-bottom:0;">c) $\overline{A}\cap (\overline{B}\cup C)$!</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_K_7c_feladat" value="correct" class="H_K_Radio" />
+                    <p>$]7; 11[$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_K_7c_feladat" value="wrong" class="H_K_Radio" />
+                    <p> $]6; 7]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_K_7c_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$[-2; 11[$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="H_K_7c_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$]-2; 7[$</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_K_Ell_7c">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_K_Seged_7c">
+                        <button class="Bezaro_gombok" id="H_K_Bezaro_7c">x</button>
+                        A komplementer minden, ami $H$-nak eleme, de $A$-nak nem, vagyis 
+                        $[-5;-2[$ unió $]7;15]$, ennek a metszete $C$-vel minden, ami 
+                        mindkettőnek az eleme. <br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$]7; 11[$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_K_ures_mezo_7c">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="H_K_helyes_valasz_7c">Helyes válasz!</div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="Feladat_lista">

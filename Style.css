@@ -181,6 +181,18 @@ body {
     margin-top: 10px;
 }
 
+.H_K_6_Kerdes_elemek {
+    display: flex;
+    flex-direction: row;
+    height: 44px;
+}
+
+.H_K_Radio {
+    transform: scale(1.2);
+    margin: 0 5px 0 10px;
+    height: 64px;
+}
+
 .Bezaro_gombok {
     position: absolute;
     top: 2px;
@@ -219,3 +231,4 @@ body {
     .blurryText:hover {
         filter: blur(0);
     }
+
