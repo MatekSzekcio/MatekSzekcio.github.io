@@ -339,7 +339,7 @@
                     <div class="helyes_valasz" id="H_K_helyes_valasz_7a">Helyes válasz!</div>
                 </div>
             </div>
-            <p style="margin-bottom:0;">b) $(A\cap B)\cup C$</pstyle="margin-bottom:0;">
+            <p style="margin-bottom:0;">b) $(A\cap B)\cup C$</p style="margin-bottom:0;">
             <div class="Valasz_felulet">
                 <label class="H_K_6_Kerdes_elemek">
                     <input type="radio" name="H_K_7b_feladat" value="wrong" class="H_K_Radio" />
@@ -412,31 +412,301 @@
             <h1 style="text-align:center">Logika középszint</h1>
             <h2>1. Feladat</h2>
             <p>Döntsd el az alábbi mondatokról, hogy ítéletek-e vagy sem!</p>
-            <p>a) A Tesla nem gyárt szép autókat.</p>
-            <p>b) Egy nap 24 órából áll.</p>
-            <p>c) Norvégia az észak-európai országok egyike.</p>
-            <p>d) A legfinomabb étel a chilis bab.</p>
+            <div class="Select_divek">
+                <p style="margin: 10px 0;">a) A Tesla nem gyárt szép autókat.</p>
+                <select name="L_K_Opciók_1a" class="Select_cuccosok1" id="L_K_Select_1a">
+                    <option value="" selected></option>
+                    <option value="wrong">Ítélet</option>
+                    <option value="correct">Nem ítélet</option>
+                </select>
+            </div>
+            <div class="Select_divek">
+                <p style="margin: 10px 0;">b) Egy nap 24 órából áll.</p>
+                <select name="L_K_Opciók_1b" class="Select_cuccosok1" id="L_K_Select_1b">
+                    <option value="" selected></option>
+                    <option value="correct">Ítélet</option>
+                    <option value="wrong">Nem ítélet</option>
+                </select>
+            </div>
+            <div class="Select_divek">
+                <p style="margin: 10px 0;">c) Norvégia az észak-európai országok egyike.</p>
+                <select name="L_K_Opciók_1c" class="Select_cuccosok1" id="L_K_Select_1c">
+                    <option value="" selected></option>
+                    <option value="correct">Ítélet</option>
+                    <option value="wrong">Nem ítélet</option>
+                </select>
+            </div>
+            <div class="Select_divek">
+                <p style="margin: 10px 0;">d) A legfinomabb étel a chilis bab.</p>
+                <select name="L_K_Opciók_1d" class="Select_cuccosok1" id="L_K_Select_1d">
+                    <option value="" selected></option>
+                    <option value="wrong">Ítélet</option>
+                    <option value="correct">Nem ítélet</option>
+                </select>
+            </div>
+            <div class="gomb">
+                <button class="Ell_gomb" id="L_K_Ell_1">Ellenőrzés</button>
+            </div>
+            <div class="Eltunt_elemek" style="margin-top: 10px;">
+                <div class="Seged_feluletek" id="L_K_Seged_1">
+                    <button class="Bezaro_gombok" id="L_K_Bezaro_1">x</button>
+                    Az állítás ítélet, ha egyértelműen eldönthető, hogy igaz vagy hamis.
+                    Az állítás nem ítélet, ha nem dönthető el egyértelműen, hogy igaz vagy hamis.<br />
+                    <b>A helyes válasz:</b> <div class="blurryText">a) Nem ítélet, b) Ítélet, c) Ítélet, d) Nem ítélet</div>
+                </div>
+                <div class="ures_mezo" id="L_K_ures_mezo_1">Válaszolj az összes kérdésre!</div>
+                <div class="helyes_valasz" id="L_K_helyes_valasz_1">Helyes válasz!</div>
+            </div>
             <h2>2. Feladat</h2>
             <p>Fogalmazd meg az alábbi állítások tagadásait!</p>
-            <p>a) Minden érettségi feladat egyszerű.</p>
-            <p>b) Van olyan háztartás, amelyben nem található TV.</p>
-            <p>c) Minden gyerek szereti a csokit.</p>
-            <p>d) Van olyan diák, aki nem szeret halmazos feladatokat megoldani.</p>
+            <p style="margin-bottom:0;">a) Minden érettségi feladat egyszerű.</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_K_2a_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Van olyan érettségi feladat, ami egyszerű.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_K_2a_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Minden érettségi feladat bonyolult.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_K_2a_feladat" value="correct" class="L_K_Radio" />
+                    <p>Van olyan érettségi feladat, amelyik nem egyszerű.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="L_K_2a_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Nincs egyszerű érettségi feladat.</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="L_K_Ell_2a">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="L_K_Seged_2a">
+                        <button class="Bezaro_gombok" id="L_K_Bezaro_2a">x</button>
+                        A „minden” tagadása: „van olyan”, majd magát az állítást is tagadjuk.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">Van olyan érettségi feladat, amelyik nem egyszerű.</div>
+                    </div>
+                    <div class="ures_mezo" id="L_K_ures_mezo_2a">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="L_K_helyes_valasz_2a">Helyes válasz!</div>
+                </div>
+            </div>
+            <p style="margin-bottom:0;">b) Van olyan háztartás, amelyben nem található TV.</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_K_2b_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Van olyan háztartás, amelyben található TV.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_K_2b_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Minden háztartásban rádió van TV helyett.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_K_2b_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Nincs olyan háztartás, amelyben található TV.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="L_K_2b_feladat" value="correct" class="L_K_Radio" />
+                    <p>Minden háztartásban található TV.</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="L_K_Ell_2b">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="L_K_Seged_2b">
+                        <button class="Bezaro_gombok" id="L_K_Bezaro_2b">x</button>
+                        A „van olyan” tagadása: „minden”, majd magát az állítást is tagadjuk.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">Minden háztartásban található TV.</div>
+                    </div>
+                    <div class="ures_mezo" id="L_K_ures_mezo_2b">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="L_K_helyes_valasz_2b">Helyes válasz!</div>
+                </div>
+            </div>
+            <p style="margin-bottom:0;">c) Minden gyerek szereti a csokit.</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_K_2c_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Van olyan gyerek, amelyik szereti a csokit.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_K_2c_feladat" value="correct" class="L_K_Radio" />
+                    <p>Van olyan gyerek, amelyik nem szereti a csokit.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_K_2c_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Van olyan gyerek, amelyik csak az étcsokit szereti.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="L_K_2c_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Egyik gyerek sem szereti a csokit.</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="L_K_Ell_2c">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="L_K_Seged_2c">
+                        <button class="Bezaro_gombok" id="L_K_Bezaro_2c">x</button>
+                         A „minden” tagadása: „van olyan”, majd magát az állítást is tagadjuk.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">Van olyan gyerek, amelyik nem szereti a csokit.</div>
+                    </div>
+                    <div class="ures_mezo" id="L_K_ures_mezo_2c">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="L_K_helyes_valasz_2c">Helyes válasz!</div>
+                </div>
+            </div>
+            <p style="margin-bottom:0;">d) Van olyan diák, aki nem szeret halmazos feladatokat megoldani.</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_K_2d_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Egyik diák sem szeret halmazos feladatokat megoldani.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_K_2d_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Van olyan diák, aki imád halmazos feladatokat megoldani.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_K_2d_feladat" value="correct" class="L_K_Radio" />
+                    <p>Minden diák szeret halmazos feladatokat megoldani.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="L_K_2d_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Van olyan diák, aki szeret halmazos feladatokat megoldani.</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="L_K_Ell_2d">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="L_K_Seged_2d">
+                        <button class="Bezaro_gombok" id="L_K_Bezaro_2d">x</button>
+                        A „van olyan” tagadása: „minden”, majd magát az állítást is tagadjuk.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">Minden diák szeret halmazos feladatokat megoldani.</div>
+                    </div>
+                    <div class="ures_mezo" id="L_K_ures_mezo_2d">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="L_K_helyes_valasz_2d">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>3. Feladat</h2>
             <p>Állapítsd meg, hogy az alábbi állításokban milyen logikai műveletek találhatóak!</p>
-            <p>a) Marci nem szeret snowboardozni.</p>
-            <p>b) Bazsa imád programozni és matekozni is.</p>
-            <p>c) Zsófi felveszi a bal vagy a jobb zokniját, de lehet mindkettőt.</p>
-            <p>d) Hanna vagy sportautóval, vagy sportmotorral jár haza.</p>
-            <p>e) Ha akad időm és energiám, akkor elmegyek edzeni.</p>
-            <p>f) Egy háromszög akkor és csak akkor derékszögű, ha befogóinak négyzetösszege megegyezik az átfogó négyzetével.</p>
+            <div class="Select_divek">
+                <p style="margin: 10px 0;">a) Zsófi felveszi a bal vagy a jobb zokniját, de lehet mindkettőt.</p>
+                <select name="L_K_Opciók_3a" class="Select_cuccosok3" id="L_K_Select_3a">
+                    <option value="" selected></option>
+                    <option value="correct">Diszjunkció</option>
+                    <option value="wrong">Negáció</option>
+                    <option value="wrong">Antivalencia</option>
+                    <option value="wrong">Implikáció</option>
+                    <option value="wrong">Konjukció</option>
+                    <option value="wrong">Ekvivalencia</option>
+                </select>
+            </div>
+            <div class="Select_divek">
+                <p style="margin: 10px 0;">b) Ha akad időm, akkor elmegyek edzeni.</p>
+                <select name="L_K_Opciók_3b" class="Select_cuccosok3" id="L_K_Select_3b">
+                    <option value="" selected></option>
+                    <option value="wrong">Diszjunkció</option>
+                    <option value="wrong">Negáció</option>
+                    <option value="wrong">Antivalencia</option>
+                    <option value="correct">Implikáció</option>
+                    <option value="wrong">Konjukció</option>
+                    <option value="wrong">Ekvivalencia</option>
+                </select>
+            </div>
+            <div class="Select_divek">
+                <p style="margin: 10px 0;">c) Marci nem szeret snowboardozni.</p>
+                <select name="L_K_Opciók_3c" class="Select_cuccosok3" id="L_K_Select_3c">
+                    <option value="" selected></option>
+                    <option value="wrong">Diszjunkció</option>
+                    <option value="correct">Negáció</option>
+                    <option value="wrong">Antivalencia</option>
+                    <option value="wrong">Implikáció</option>
+                    <option value="wrong">Konjukció</option>
+                    <option value="wrong">Ekvivalencia</option>
+                </select>
+            </div>
+            <div class="Select_divek">
+                <p style="margin: 10px 0;">d) Hanna vagy sportautóval, vagy sportmotorral jár haza.</p>
+                <select name="L_K_Opciók_3d" class="Select_cuccosok3" id="L_K_Select_3d">
+                    <option value="" selected></option>
+                    <option value="wrong">Diszjunkció</option>
+                    <option value="wrong">Negáció</option>
+                    <option value="correct">Antivalencia</option>
+                    <option value="wrong">Implikáció</option>
+                    <option value="wrong">Konjukció</option>
+                    <option value="wrong">Ekvivalencia</option>
+                </select>
+            </div>
+            <div class="Select_divek">
+                <p style="margin: 10px 0;">e) Bazsa imád programozni és matekozni is.</p>
+                <select name="L_K_Opciók_3e" class="Select_cuccosok3" id="L_K_Select_3e">
+                    <option value="" selected></option>
+                    <option value="wrong">Diszjunkció</option>
+                    <option value="wrong">Negáció</option>
+                    <option value="wrong">Antivalencia</option>
+                    <option value="wrong">Implikáció</option>
+                    <option value="correct">Konjukció</option>
+                    <option value="wrong">Ekvivalencia</option>
+                </select>
+            </div>
+            <div class="Select_divek">
+                <p style="margin: 10px 0;">f) Egy háromszög akkor és csak akkor derékszögű, ha befogóinak négyzetösszege megegyezik az átfogó négyzetével.</p>
+                <select name="L_K_Opciók_3f" class="Select_cuccosok3" id="L_K_Select_3f">
+                    <option value="" selected></option>
+                    <option value="wrong">Diszjunkció</option>
+                    <option value="wrong">Negáció</option>
+                    <option value="wrong">Antivalencia</option>
+                    <option value="wrong">Implikáció</option>
+                    <option value="wrong">Konjukció</option>
+                    <option value="correct">Ekvivalencia</option>
+                </select>
+            </div>
+            <div class="gomb">
+                <button class="Ell_gomb" id="L_K_Ell_3">Ellenőrzés</button>
+            </div>
+            <div class="Eltunt_elemek" style="margin-top: 10px;">
+                <div class="Seged_feluletek" id="L_K_Seged_3">
+                    <button class="Bezaro_gombok" id="L_K_Bezaro_3">x</button>
+                    A „nem” szó negációt (tagadást) jelöl.<br />
+                    Az „és” szó konjunkciót jelöl.<br />
+                    A „vagy” szó diszjunkciót vagy antivalecniát jelöl, attól függően, hogy egyszerre bekövetkezhet-e mindkettő.<br />
+                    A „ha…, akkor…” szókapcsolat implikációt jelöl.<br />
+                    Az „akkor és csak akkor…” szókapcsolat ekvivalenciát jelöl.<br />
+                    <b>A helyes válasz:</b> <div class="blurryText">a) Diszjunkció, b) Implikáció, c) Negáció, d) Antivalencia e) Konjukció f) Ekvivalencia</div>
+                </div>
+                <div class="ures_mezo" id="L_K_ures_mezo_3">Válaszolj az összes kérdésre!</div>
+                <div class="helyes_valasz" id="L_K_helyes_valasz_3">Helyes válasz!</div>
+            </div>
             <h2>4. Feladat</h2>
             <p>Nóri, Lívi és Réka egy rablás gyanúsítottjai. A tárgyaláson a következő fejlemények láttak napvilágot:</p>
             <p>a) Vagy Réka ártatlan, vagy Lívi bűnös.</p>
             <p>b) Ha Lívi bűnös, Réka ártatlan.</p>
             <p>c) Nóri és Réka sosem dolgoznak együtt, és Nóri soha nem dolgozik egyedül.</p>
-            <p>d) Ha Lívi bűnös, akkor Nóri is az.</p>            
-            <p>Ki, vagy kik lehettek a rablás elkövetői?</p>
+            <p>d) Ha Lívi bűnös, akkor Nóri is az.</p>
+            <p></p>
+            <div class="Select_divek">
+                <p style="margin: 10px 0;">Ki, vagy kik lehettek a rablás elkövetői?</p>
+                <select name="L_K_Opciók_4" class="Select_cuccosok4" id="L_K_Select_4" style="width:150px;">
+                    <option value="" selected></option>
+                    <option value="wrong">Egyikük sem</option>
+                    <option value="wrong">Nóri</option>
+                    <option value="wrong">Lívi</option>
+                    <option value="wrong">Réka</option>
+                    <option value="correct">Nóri és Lívi</option>
+                    <option value="wrong">Nóri és Réka</option>
+                    <option value="wrong">Lívi és Réka</option>
+                    <option value="wrong">Nóri, Lívi és Réka</option>
+                </select>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="L_K_Ell_4">Ellenőrzés</button>
+                </div>
+            </div>
+            <div class="Eltunt_elemek" style="margin-top: 10px;">
+                <div class="Seged_feluletek" id="L_K_Seged_4">
+                    <button class="Bezaro_gombok" id="L_K_Bezaro_4">x</button>
+                    Ha Lívi ártatlan, akkor Réka is az (a) alapján), viszont Nóri nem dolgozik egyedül (c) alapján), így ez nem lehet.
+                    Ha Lívi bűnös, Réka ártatlan (a) és b) teljesül), ekkor Nóri is bűnös (c) és d) teljesül).<br />
+                    <b>A helyes válasz:</b> <div class="blurryText">Nóri és Lívi</div>
+                </div>
+                <div class="ures_mezo" id="L_K_ures_mezo_4">Válassz egyet!</div>
+                <div class="helyes_valasz" id="L_K_helyes_valasz_4">Helyes válasz!</div>
+            </div>
 
         </div>
     </div>

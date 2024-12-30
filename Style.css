@@ -86,6 +86,7 @@ body {
     opacity: 0.9;
     transition: 1s;
     font-size: 22px;
+    margin-bottom: 10px;
 }
 
     #Emelt_gomb:hover, #Kozep_gomb:hover {
@@ -96,6 +97,7 @@ body {
         cursor: pointer;
         opacity: 1;
         font-size: 23px;
+        margin-bottom: 0;
     }
 
 .Valasz {
@@ -123,14 +125,11 @@ body {
 .gomb {
     display: flex;
     margin-left: auto;
+    justify-content: flex-end;
 }
 
 .Ell_gomb {
     font-family: "Latin Modern math", sans-serif;
-    display: flex;
-    justify-content: flex-end;
-    text-align: center;
-    text-decoration: none;
     font-size: 20px;
     color: white;
     background-color: #119f4a;
@@ -187,7 +186,7 @@ body {
     height: 44px;
 }
 
-.H_K_Radio {
+.H_K_Radio, .L_K_Radio {
     transform: scale(1.2);
     margin: 0 5px 0 10px;
     height: 64px;
@@ -204,6 +203,36 @@ body {
     font-size: 20px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.Select_cuccosok1, .Select_cuccosok3, .Select_cuccosok4 {
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+    padding: 3px 0;
+    width: 120px;
+    margin-left: 100px;
+    appearance: none;
+    font-family: "Latin Modern math", sans-serif;
+    transition: border-color 0.3s;
+    transition: border-width 0.3s;
+}
+
+.Select_divek {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+option {
+    text-align: center;
+    font-size: 15px;
 }
 
 .Valasz_felulet {
@@ -232,3 +261,9 @@ body {
         filter: blur(0);
     }
 
+
+.MathJax span {
+    /* font-size: 100% !important; /* Nagyobb betűméret */
+    /* margin: 0.5em auto; /* Margó hozzáadása a képletek köré */
+    /* padding: 1em; /* Padding hozzáadása, hogy jobban helyezkedjenek el */
+}

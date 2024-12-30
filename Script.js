@@ -433,6 +433,61 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("L_K_Bezaro_1").addEventListener("click", function () {
+        const segedElem = document.getElementById("L_K_Seged_1");
+        segedElem.style.display = "none";
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("L_K_Bezaro_2a").addEventListener("click", function () {
+        const segedElem = document.getElementById("L_K_Seged_2a");
+        segedElem.style.display = "none";
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("L_K_Bezaro_2b").addEventListener("click", function () {
+        const segedElem = document.getElementById("L_K_Seged_2b");
+        segedElem.style.display = "none";
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("L_K_Bezaro_2c").addEventListener("click", function () {
+        const segedElem = document.getElementById("L_K_Seged_2c");
+        segedElem.style.display = "none";
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("L_K_Bezaro_2d").addEventListener("click", function () {
+        const segedElem = document.getElementById("L_K_Seged_2d");
+        segedElem.style.display = "none";
+
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("L_K_Bezaro_3").addEventListener("click", function () {
+        const segedElem = document.getElementById("L_K_Seged_3");
+        segedElem.style.display = "none";
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("L_K_Bezaro_4").addEventListener("click", function () {
+        const segedElem = document.getElementById("L_K_Seged_4");
+        segedElem.style.display = "none";
+
+    });
+});
+
 //Szintek közti váltó gombok
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("Kozep_gomb").addEventListener("click", function () {
@@ -445,5 +500,411 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("Emelt_gomb").addEventListener("click", function () {
         window.location.href = "Emelt.html";
 
+    });
+});
+
+//Közép logika 1. feladat
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_K_Select_1a').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_K_Select_1b').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_K_Select_1c').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_K_Select_1d').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const selects = document.querySelectorAll('.Select_cuccosok1');
+    const checkButton = document.getElementById('L_K_Ell_1');
+
+    selects.forEach((select) => {
+        select.addEventListener('change', () => {
+            if (select.value === '') {
+                select.style.borderColor = 'red';
+                select.style.borderWidth = '2px';
+            } else {
+                select.style.borderColor = '';
+                select.style.borderWidth = '';
+            }
+        });
+    });
+
+    checkButton.addEventListener('click', () => {
+        let allSelected = true;
+        let allCorrect = true;
+
+        const segedElem = document.getElementById("L_K_Seged_1");
+        const uresElem = document.getElementById("L_K_ures_mezo_1");
+        const valaszElem = document.getElementById("L_K_helyes_valasz_1");
+
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+
+        selects.forEach((select) => {
+            if (select.value === '') {
+                select.style.borderColor = 'red';
+                select.style.borderWidth = '2px';
+                allSelected = false;
+            }
+        });
+
+        if (!allSelected) {
+            uresElem.style.display = "flex";
+            return;
+        }
+
+        selects.forEach((select) => {
+            if (select.value === 'correct') {
+                select.style.borderColor = 'green';
+                select.style.borderWidth = '2px';
+            } else if (select.value === 'wrong') {
+                select.style.borderColor = 'red';
+                select.style.borderWidth = '2px';
+                allCorrect = false;
+            }
+        });
+
+        if (!allCorrect) {
+            segedElem.style.display = "block";
+        } else {
+            valaszElem.style.display = "flex";
+        }
+    });
+});
+
+//Közép logika 2. feladat
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("L_K_Ell_2a").addEventListener("click", function () {
+        const selectedOption = document.querySelector('input[name="L_K_2a_feladat"]:checked');
+        const segedElem = document.getElementById("L_K_Seged_2a");
+        const uresElem = document.getElementById("L_K_ures_mezo_2a");
+        const valaszElem = document.getElementById("L_K_helyes_valasz_2a");
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+
+        if (!selectedOption) {
+            uresElem.style.display = "flex";
+        }
+        if (selectedOption.value === "correct") {
+            valaszElem.style.display = "flex";
+        } else {
+            segedElem.style.display = "block";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("L_K_Ell_2b").addEventListener("click", function () {
+        const selectedOption = document.querySelector('input[name="L_K_2b_feladat"]:checked');
+        const segedElem = document.getElementById("L_K_Seged_2b");
+        const uresElem = document.getElementById("L_K_ures_mezo_2b");
+        const valaszElem = document.getElementById("L_K_helyes_valasz_2b");
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+
+        if (!selectedOption) {
+            uresElem.style.display = "flex";
+        }
+        if (selectedOption.value === "correct") {
+            valaszElem.style.display = "flex";
+        } else {
+            segedElem.style.display = "block";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("L_K_Ell_2c").addEventListener("click", function () {
+        const selectedOption = document.querySelector('input[name="L_K_2c_feladat"]:checked');
+        const segedElem = document.getElementById("L_K_Seged_2c");
+        const uresElem = document.getElementById("L_K_ures_mezo_2c");
+        const valaszElem = document.getElementById("L_K_helyes_valasz_2c");
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+
+        if (!selectedOption) {
+            uresElem.style.display = "flex";
+        }
+        if (selectedOption.value === "correct") {
+            valaszElem.style.display = "flex";
+        } else {
+            segedElem.style.display = "block";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("L_K_Ell_2d").addEventListener("click", function () {
+        const selectedOption = document.querySelector('input[name="L_K_2d_feladat"]:checked');
+        const segedElem = document.getElementById("L_K_Seged_2d");
+        const uresElem = document.getElementById("L_K_ures_mezo_2d");
+        const valaszElem = document.getElementById("L_K_helyes_valasz_2d");
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+
+        if (!selectedOption) {
+            uresElem.style.display = "flex";
+        }
+        if (selectedOption.value === "correct") {
+            valaszElem.style.display = "flex";
+        } else {
+            segedElem.style.display = "block";
+        }
+    });
+});
+
+//Közép logika 3. feladat
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_K_Select_3a').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_K_Select_3b').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_K_Select_3c').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_K_Select_3d').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_K_Select_3e').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_K_Select_3f').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const selects = document.querySelectorAll('.Select_cuccosok3');
+    const checkButton = document.getElementById('L_K_Ell_3');
+
+    selects.forEach((select) => {
+        select.addEventListener('change', () => {
+            if (select.value === '') {
+                select.style.borderColor = 'red';
+                select.style.borderWidth = '2px';
+            } else {
+                select.style.borderColor = '';
+                select.style.borderWidth = '';
+            }
+        });
+    });
+
+    checkButton.addEventListener('click', () => {
+        let allSelected = true;
+        let allCorrect = true;
+
+        const segedElem = document.getElementById("L_K_Seged_3");
+        const uresElem = document.getElementById("L_K_ures_mezo_3");
+        const valaszElem = document.getElementById("L_K_helyes_valasz_3");
+
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+
+        selects.forEach((select) => {
+            if (select.value === '') {
+                select.style.borderColor = 'red';
+                select.style.borderWidth = '2px';
+                allSelected = false;
+            }
+        });
+
+        if (!allSelected) {
+            uresElem.style.display = "flex";
+            return;
+        }
+
+        selects.forEach((select) => {
+            if (select.value === 'correct') {
+                select.style.borderColor = 'green';
+                select.style.borderWidth = '2px';
+            } else if (select.value === 'wrong') {
+                select.style.borderColor = 'red';
+                select.style.borderWidth = '2px';
+                allCorrect = false;
+            }
+        });
+
+        if (!allCorrect) {
+            segedElem.style.display = "block";
+        } else {
+            valaszElem.style.display = "flex";
+        }
+    });
+});
+
+//Közép logika 4. feladat
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_K_Select_4').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const select = document.querySelector('.Select_cuccosok4');
+    const checkButton = document.getElementById('L_K_Ell_4');
+
+    select.addEventListener('change', () => {
+        if (select.value === '') {
+            select.style.borderColor = 'red';  // Ha nincs válasz, piros szegély
+            select.style.borderWidth = '2px';
+        } else {
+            select.style.borderColor = '';  // Ha van válasz, alap szín
+            select.style.borderWidth = '';
+        }
+    });
+
+    checkButton.addEventListener('click', () => {
+        let allSelected = true;
+        let allCorrect = true;
+
+        const segedElem = document.getElementById("L_K_Seged_4");
+        const uresElem = document.getElementById("L_K_ures_mezo_4");
+        const valaszElem = document.getElementById("L_K_helyes_valasz_4");
+
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+
+        if (select.value === '') {
+            select.style.borderColor = 'red';
+            select.style.borderWidth = '2px';
+            allSelected = false;
+        }
+
+        if (!allSelected) {
+            uresElem.style.display = "flex";
+            return;
+        }
+
+        if (select.value === 'correct') {
+            select.style.borderColor = 'green';
+            select.style.borderWidth = '2px';
+        } else if (select.value === 'wrong') {
+            select.style.borderColor = 'red';
+            select.style.borderWidth = '2px';
+            allCorrect = false;
+        }
+
+        if (!allCorrect) {
+            segedElem.style.display = "block";
+        } else {
+            valaszElem.style.display = "flex";
+        }
     });
 });
