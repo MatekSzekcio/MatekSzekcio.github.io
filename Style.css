@@ -86,7 +86,7 @@ body {
     opacity: 0.9;
     transition: 1s;
     font-size: 22px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 10px;
 }
 
     #Emelt_gomb:hover, #Kozep_gomb:hover {
@@ -97,7 +97,7 @@ body {
         cursor: pointer;
         opacity: 1;
         font-size: 23px;
-        margin-bottom: 0;
+        margin: 0;
     }
 
 .Valasz {
@@ -186,7 +186,7 @@ body {
     height: 44px;
 }
 
-.H_K_Radio, .L_K_Radio {
+.H_K_Radio, .L_K_Radio, .H_E_Radio {
     transform: scale(1.2);
     margin: 0 5px 0 10px;
     height: 64px;
@@ -205,7 +205,7 @@ body {
     font-weight: bold;
 }
 
-.Select_cuccosok1, .Select_cuccosok3, .Select_cuccosok4 {
+.Select_cuccosok1, .Select_cuccosok3, .Select_cuccosok4, .H_E_Select_cuccosok2 {
     border-radius: 20px;
     text-align: center;
     font-size: 15px;

@@ -4,19 +4,20 @@
 <head>
     <!-- Google Tag Manager -->
     <script>
-(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-T2M9X45N');</script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T2M9X45N');</script>
     <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <title>Matematika Feladatsor</title>
     <link rel="stylesheet" href="Style.css">
-    <script src="Script.js"></script>
+    <script src="Kozep_Script.js"></script>
+    <script src="Emelt_Script.js"></script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
             tex2jax: {
@@ -44,16 +45,136 @@
             <h2>1. Feladat</h2>
             <h2>2. Feladat</h2>
             <p>Döntsd el, hogy igazak-e a következő egyenlőségek!</p>
-            <p>a) $A\cup (B \setminus C)=(A\cup B) \setminus C$</p>
-            <p>b) $(\overline{A\cup B}) \setminus \overline{C}=\overline{A}\cap \overline{B} \cap C$</p>
+            <div class="Select_divek">
+                <p style="margin: 10px 0;">a) $A\cup (B \setminus C)=(A\cup B) \setminus C$</p>
+                <select name="H_E_Opciók_2a" class="H_E_Select_cuccosok2" id="H_E_Select_2a">
+                    <option value="" selected></option>
+                    <option value="wrong">Igaz</option>
+                    <option value="correct">Hamis</option>
+                </select>
+            </div>
+            <div class="Select_divek">
+                <p style="margin: 10px 0;">b) $(\overline{A\cup B}) \setminus \overline{C}=\overline{A}\cap \overline{B} \cap C$</p>
+                <select name="H_E_Opciók_2b" class="H_E_Select_cuccosok2" id="H_E_Select_2b">
+                    <option value="" selected></option>
+                    <option value="correct">Igaz</option>
+                    <option value="wrong">Hamis</option>
+                </select>
+            </div>
+            <div class="gomb">
+                <button class="Ell_gomb" id="H_E_Ell_2">Ellenőrzés</button>
+            </div>
+            <div class="Eltunt_elemek" style="margin-top: 10px;">
+                <div class="Seged_feluletek" id="H_E_Seged_2">
+                    <button class="Bezaro_gombok" id="H_E_Bezaro_2">x</button>
+                    Ábrázold Venn diagramon a két oldalt külön, ha a két diagram
+                    ugyanolyan, akkor igaz az egyenlet.<br />
+                    <b>A helyes válasz:</b> <div class="blurryText">a) Hamis, b) Igaz</div>
+                </div>
+                <div class="ures_mezo" id="H_E_ures_mezo_2">Válaszolj az összes kérdésre!</div>
+                <div class="helyes_valasz" id="H_E_helyes_valasz_2">Helyes válasz!</div>
+            </div>
             <h2>3. Feladat</h2>
             <p>
                 Legyen <i>A</i> halmaz a $\sqrt{-x^2+11x-24}$ kifejezés a <i>B</i> halmaz pedig a
                 $\sqrt{x^2-13+36}$ kifejezés értelmezési tartománya. Határozd meg...
             </p>
-            <p>a) az <i>A</i> halmazt!</p>
-            <p>b) a <i>B</i> halmazt!</p>
-            <p>c) valamint az $A\cup B$ halmazt!</p>
+            <p style="margin-bottom:0;">a) az <i>A</i> halmazt!</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_3a_feladat" value="wrong" class="H_E_Radio" />
+                    <p>$\mathbb{R}$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_3a_feladat" value="correct" class="H_E_Radio" />
+                    <p> $[3; 8]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_3a_feladat" value="wrong" class="H_E_Radio" />
+                    <p>$]-\infty; 3] \cup [8; \infty[$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="H_E_3a_feladat" value="wrong" class="H_E_Radio" />
+                    <p>$]3; 8[$</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_E_Ell_3a">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_E_Seged_3a">
+                        <button class="Bezaro_gombok" id="H_E_Bezaro_3a">x</button>
+                        A gyökjel alatti kifejezés mindig nagyobb vagy egyenlő,
+                        mint nulla. <br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$[3; 8]$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_E_ures_mezo_3a">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="H_E_helyes_valasz_3a">Helyes válasz!</div>
+                </div>
+            </div>
+            <p style="margin-bottom:0;">b) a <i>B</i> halmazt!</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_3b_feladat" value="wrong" class="H_E_Radio" />
+                    <p>$[4; 9]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_3b_feladat" value="wrong" class="H_E_Radio" />
+                    <p> $]4; 9[$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_3b_feladat" value="correct" class="H_E_Radio" />
+                    <p>$]-\infty; 4] \cup [9; \infty[$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="H_E_3b_feladat" value="wrong" class="H_E_Radio" />
+                    <p>$\mathbb{R}$</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_E_Ell_3b">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_E_Seged_3b">
+                        <button class="Bezaro_gombok" id="H_E_Bezaro_3b">x</button>
+                        A gyökjel alatti kifejezés mindig nagyobb vagy egyenlő,
+                        mint nulla. <br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$]-\infty; 4] \cup [9; \infty[$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_E_ures_mezo_3b">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="H_E_helyes_valasz_3b">Helyes válasz!</div>
+                </div>
+            </div>
+            <p style="margin-bottom:0;">c) az $A\cup B$ halmazt!</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_3c_feladat" value="wrong" class="H_E_Radio" />
+                    <p>$]-\infty; 8] \cup [9; \infty[$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_3c_feladat" value="wrong" class="H_E_Radio" />
+                    <p> $]-\infty; 3] \cup [4; \infty[$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_3c_feladat" value="wrong" class="H_E_Radio" />
+                    <p>$[8; 9]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="H_E_3c_feladat" value="correct" class="H_E_Radio" />
+                    <p>$[3; 4]$</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_E_Ell_3c">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_E_Seged_3c">
+                        <button class="Bezaro_gombok" id="H_E_Bezaro_3c">x</button>
+                        Minden, ami A és B halmaznak is eleme, érdemes
+                        számegyenesen ábrázolni. <br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$[3; 4]$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_E_ures_mezo_3c">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="H_E_helyes_valasz_3c">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>4. Feladat</h2>
             <p>
                 A világ egyik rejtelmes zugában van egy iskola, ahol a diákok
@@ -62,8 +183,50 @@
                 Kémiát 18-an, bioszt 15-en és fizikát 20-an tanulnak. 7 fő mindhárom
                 tárgyat, 6-an pedig pontosan két tárgyat tanulnak!
             </p>
-            <p>a) Hányan vannak, akik a fentiek közül, akik egyik tárgyat se tanulják?</p>
-            <p>b) Hányan tanulnak pontosan egy tárgyat?</p>
+            <p></p>
+            <div class="Valasz_felulet">
+                <p class="Valasz_label">
+                    a) Hányan vannak, akik a fentiek közül, akik egyik tárgyat se tanulják?<br />
+                </p>
+                <div class="Kerdes_elemek">
+                    <textarea class="Valasz" id="H_E_Valasz_4a" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_E_Ell_4a">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_E_Seged_4a">
+                        <button class="Bezaro_gombok" id="H_E_Bezaro_4a">x</button>
+                        A logikai szita formula gondolatmenetét használva összeadhatjuk a 3
+                        halmaz tagjait, így viszont kétszer számoltuk azokat, akik pont 2
+                        tárgyat tanulnak, és háromszor számoltuk azokat, akik pontosan 3
+                        tárgyat tanulnak. Így a természettudományi tárgyat tanulók száma:
+                        $18+15+20-6-2\cdot 7=33$. Így 2 diák van, aki egyiket sem tanulja.<br />
+                    </div>
+                    <div class="ures_mezo" id="H_E_ures_mezo_4a">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="H_E_szam_check_4a">Csak nemnegatív egész számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="H_E_helyes_valasz_4a">Helyes válasz!</div>
+                </div>
+                <p class="Valasz_label">
+                    b) Hányan tanulnak pontosan egy tárgyat?<br />
+                </p>
+                <div class="Kerdes_elemek">
+                    <textarea class="Valasz" id="H_E_Valasz_4b" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_E_Ell_4b">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_E_Seged_4b">
+                        <button class="Bezaro_gombok" id="H_E_Bezaro_4b">x</button>
+                        33-an tanulnak legalább egyet, 6-an pontosan kettőt, 7-en pontosan hármat.
+                        Vagyis pontosan egyet $33-6-7=20$ diák tanul.<br />
+                    </div>
+                    <div class="ures_mezo" id="H_E_ures_mezo_4b">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="H_E_szam_check_4b">Csak nemnegatív egész számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="H_E_helyes_valasz_4b">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>5. Feladat</h2>
             <p>
                 Egy zeneiskola minden tanulója szerepelt a tanév során szervezett
@@ -73,9 +236,33 @@
                 szerepeltek. 10 olyan növendék volt, aki mindhárom hangversenyen fellépett.
                 A zeneiskolába 188 tanuló jár. Azok közül, akik csak egy hangversenyen léptek
                 fel, kétszer annyian szerepeltek tavasszal, mint télen, de csak negyedannyian
-                ősszel, mint tavasszal. Számítsd ki, hogy hány olyan tanuló volt, aki csak
-                télen szerepelt!
+                ősszel, mint tavasszal.
             </p>
+            <div class="Valasz_felulet">
+                <p class="Valasz_label">
+                    Számítsd ki, hogy hány olyan tanuló volt, aki csak télen szerepelt!<br />
+                </p>
+                <div class="Kerdes_elemek">
+                    <textarea class="Valasz" id="H_E_Valasz_5" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_E_Ell_5">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_E_Seged_5">
+                        <button class="Bezaro_gombok" id="H_E_Bezaro_5">x</button>
+                        Ábrázold Venn diagramon! A hármas és kettes metszeteket a szöveg
+                        alapján ki lehet tölteni (10; 10; 8 és 13 értékek fognak szerepelni).
+                        A csak téli hangversenyen részvevőket jelölhetjük $x$-szel, ekkor a csak
+                        tavaszin résztvevők: $2x$, a csak őszin: $0,5x$. Így felírhatunk egy egyenletet,
+                        miszerint $x+2x+0,5x+10+10+8+13=188$.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$42$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_E_ures_mezo_5">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="H_E_szam_check_5">Csak nemnegatív egész számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="H_E_helyes_valasz_5">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>6. Feladat</h2>
             <p>
                 Az SG-ben 140 tanár van, 50%-uk tud matekot tanítani, 35%-uk törit és 25%-uk
@@ -83,6 +270,30 @@
                 Tudjuk továbbá azt is, hogy olyan tanár nincs, aki törit és közgázt tanít,
                 de matekot nem. Hány SG-s van, aki polihisztor (mindhárom tárgyat tanítja)?
             </p>
+            <div class="Valasz_felulet">
+                <p class="Valasz_label">
+                    Számítsd ki, hogy hány olyan tanuló volt, aki csak télen szerepelt!<br />
+                </p>
+                <div class="Kerdes_elemek">
+                    <textarea class="Valasz" id="H_E_Valasz_6" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_E_Ell_6">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_E_Seged_6">
+                        <button class="Bezaro_gombok" id="H_E_Bezaro_6">x</button>
+                        70 matekos, 49 töris és 35 közgázos van, pontosan kettőt 6 tanár tud tanítani. 
+                        Így ha x tanár polihisztor, akkor $70+49+35-6-2x=140$
+                        (Mert az összeadásnál kétszer számoltuk azt, aki kettőt tud tanítani, 
+                        és háromszor azt, aki hármat).<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$4$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_E_ures_mezo_6">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="H_E_szam_check_6">Csak nemnegatív egész számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="H_E_helyes_valasz_6">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>7. Feladat</h2>
             <p>
                 Az iskolai büfében verekedés tört ki, aminek folyamán a 30 résztvevő kiborította
@@ -91,6 +302,28 @@
                 almát és citromot 7-en, banánt és citromot pedig 5-en szereztek. Mindhárom
                 gyümölcsöt 4 kigyúrt srác tudott szerezni. Hányan nem szereztek egyet sem?
             </p>
+            <div class="Valasz_felulet">
+                <p class="Valasz_label">
+                    Számítsd ki, hogy hány olyan tanuló volt, aki csak télen szerepelt!<br />
+                </p>
+                <div class="Kerdes_elemek">
+                    <textarea class="Valasz" id="H_E_Valasz_7" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_E_Ell_7">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_E_Seged_7">
+                        <button class="Bezaro_gombok" id="H_E_Bezaro_7">x</button>
+                        A logikai szita formula képletébe behelyettesítve: $20+16+10-11-7-5+4=27$,
+                        vagyis 27-en szereztek legalább egy gyümölcsöt.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$3$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_E_ures_mezo_7">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="H_E_szam_check_7">Csak nemnegatív egész számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="H_E_helyes_valasz_7">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>8. Feladat</h2>
         </div>
     </div>
@@ -99,22 +332,239 @@
             <h1 style="text-align:center">Logika emelt szint</h1>
             <h2>1. Feladat</h2>
             <p>Fogalmazd meg az alábbi állítások tagadásait!</p>
-            <p>a) Minden héten legalább egy napon motiváltnak érzem magam.</p>
-            <p>b) Létezik olyan kocka, amelynek minden oldala lila.</p>
-            <p>c) Bábás bálvány az egyetlen olyan bálvány, amelyet mindenki tisztel és csodál.</p>
-            <p>d) Minden évben van olyan tantárgy, amelynek minden órájára felkészülök.</p>
+            <p style="margin-bottom:0;">a) Minden héten legalább egy napon motiváltnak érzem magam.</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_1a_feladat" value="correct" class="L_K_Radio" />
+                    <p>Van olyan hét, amikor egy napon sem érzem magam motiváltnak.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_1a_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Minden hét minden napján motiváltnak érzem magam.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_1a_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Sosem érzem magam motiváltnak.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="L_E_1a_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Van olyan hét, amikor minden nap motiváltnak érzem magam.</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="L_E_Ell_1a">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="L_E_Seged_1a">
+                        <button class="Bezaro_gombok" id="L_E_Bezaro_1a">x</button>
+                        A „minden” tagadása: „van olyan”, a „legalább egy napon…”
+                        „van olyan nap, amikor…”-ként értelmezhető, így ennek a tagadása a
+                        „minden nap”, majd magát az állítást tagadjuk. <br />
+                        <b>A helyes válasz:</b> <div class="blurryText">Van olyan hét, amikor egy napon sem érzem magam motiváltnak.</div>
+                    </div>
+                    <div class="ures_mezo" id="L_E_ures_mezo_1a">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="L_E_helyes_valasz_1a">Helyes válasz!</div>
+                </div>
+            </div>
+            <p style="margin-bottom:0;">b) Létezik olyan kocka, amelynek minden oldala lila.</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_1b_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Minden kockának minden oldala lila.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_1b_feladat" value="wrong" class="L_K_Radio" />
+                    <p> Van olyan kocka, amelynek minden oldala lila.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_1b_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Minden kockának létezik olyan oldala, ami lila.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="L_E_1b_feladat" value="correct" class="L_K_Radio" />
+                    <p>Minden kockának van olyan oldala, ami nem lila.</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="L_E_Ell_1b">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="L_E_Seged_1b">
+                        <button class="Bezaro_gombok" id="L_E_Bezaro_1b">x</button>
+                        A „létezik” „van olyan”-ként értelmezhető, így ennek a tagadása a
+                        „minden”, a „minden” tagadása a „van olyan”, majd magát az állítást tagadjuk.  <br />
+                        <b>A helyes válasz:</b> <div class="blurryText">Minden kockának van olyan oldala, ami nem lila.</div>
+                    </div>
+                    <div class="ures_mezo" id="L_E_ures_mezo_1b">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="L_E_helyes_valasz_1b">Helyes válasz!</div>
+                </div>
+            </div>
+            <p style="margin-bottom:0;">c) Bábás bálvány az egyetlen olyan bálvány, amelyet mindenki tisztel és csodál.</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_1c_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Van olyan diák, aki imád halmazos feladatokat megoldani.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_1c_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Egyik diák sem szeret halmazos feladatokat megoldani.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_1c_feladat" value="correct" class="L_K_Radio" />
+                    <p>Minden diák szeret halmazos feladatokat megoldani.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="L_E_1c_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Van olyan diák, aki szeret halmazos feladatokat megoldani.</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="L_E_Ell_1c">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="L_E_Seged_1c">
+                        <button class="Bezaro_gombok" id="L_E_Bezaro_1c">x</button>
+                        A „van olyan” tagadása: „minden”, majd magát az állítást is tagadjuk. <br />
+                        <b>A helyes válasz:</b> <div class="blurryText">Minden diák szeret halmazos feladatokat megoldani.</div>
+                    </div>
+                    <div class="ures_mezo" id="L_E_ures_mezo_1c">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="L_E_helyes_valasz_1c">Helyes válasz!</div>
+                </div>
+            </div>
+            <p style="margin-bottom:0;">d) Minden évben van olyan tantárgy, amelynek minden órájára felkészülök.</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_1d_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Van olyan év, amikor van olyan tárgy, aminek van olyan órája, amelyre nem készülök fel.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_1d_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Minden évben van olyan tárgy, amelynek egyik órájára sem készülök fel.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_1d_feladat" value="correct" class="L_K_Radio" />
+                    <p>Van olyan év, amikor minden tárgynak van olyan órája, amelyre nem készülök fel.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="L_E_1d_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Minden évben minden tárgynak van olyan órája, amelyre nem készülök fel.</p>
+                </label>
+                <div class="gomb" style="margin-bottom: 10px;">
+                    <button class="Ell_gomb" id="L_E_Ell_1d">Ellenőrzés</button>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="L_E_Seged_1d">
+                        <button class="Bezaro_gombok" id="L_E_Bezaro_1d">x</button>
+                        A „minden évben” tagadása a „van olyan év”, a „van olyan tárgy”
+                        tagadása a „minden tárgy”, a „minden órája” tagadása a „van olyan
+                        órája”, majd magát az állítást tagadjuk. <br />
+                        <b>A helyes válasz:</b> <div class="blurryText">Van olyan év, amikor minden tárgynak van olyan órája, amelyre nem készülök fel.</div>
+                    </div>
+                    <div class="ures_mezo" id="L_E_ures_mezo_1d">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="L_E_helyes_valasz_1d">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>2. Feladat</h2>
             <p>Fogalmazd meg az alábbi állítások megfordítását!</p>
-            <p>a) Ha egy természetes szám nullára végződik, akkor osztható öttel.</p>
-            <p>b) Egy szorzat akkor és csak akkor nulla, ha legalább egyik tényezője nulla.</p>
-            <p>c) Ha egy háromszög egyenlőszárú, akkor van két egyenlő szöge.</p>
-            <h2>3. Feladat</h2>
-            <p>Értékeld ki igazságtábla segítségével a következő logikai műveleteket!</p>
-            <p>a) $\neg A \land B$</p>
-            <p>b) $A\lor (A \land B)$</p>
-            <p>c) $\neg (A\land B)\land (A\lor \neg B)$</p>
+            <p style="margin-bottom:0;">a) Ha egy természetes szám nullára végződik, akkor osztható öttel.</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_2a_feladat" value="correct" class="L_K_Radio" />
+                    <p>Ha egy természetes szám osztható öttel, akkor nullára végződik.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_2a_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Ha egy természetes szám nullára végződik, akkor és csak akkor osztható öttel.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_2a_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Ha egy szám nullára végződik és osztható öttel, akkor természetes.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="L_E_2a_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Akkor osztható egy természetes szám öttel, ha nullára végződik.</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="L_E_Ell_2a">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="L_E_Seged_2a">
+                        <button class="Bezaro_gombok" id="L_E_Bezaro_2a">x</button>
+                        A mondat megfordításához fel kell cserélnünk a 2 tagmondatot. <br />
+                        <b>A helyes válasz:</b> <div class="blurryText">Ha egy természetes szám osztható öttel, akkor nullára végződik.</div>
+                    </div>
+                    <div class="ures_mezo" id="L_E_ures_mezo_2a">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="L_E_helyes_valasz_2a">Helyes válasz!</div>
+                </div>
+            </div>
+                <p style="margin-bottom:0;">b) Egy szorzat akkor és csak akkor nulla, ha legalább egyik tényezője nulla.</p>
+                <div class="Valasz_felulet">
+                    <label class="H_K_6_Kerdes_elemek">
+                        <input type="radio" name="L_E_2b_feladat" value="wrong" class="L_K_Radio" />
+                        <p>Egy szorzat nulla, ha legalább az egyik tényezője nulla.</p>
+                    </label>
+                    <label class="H_K_6_Kerdes_elemek">
+                        <input type="radio" name="L_E_2b_feladat" value="wrong" class="L_K_Radio" />
+                        <p>Egy szorzat akkor és csak akkor nulla, ha minden tényezője nulla.</p>
+                    </label>
+                    <label class="H_K_6_Kerdes_elemek">
+                        <input type="radio" name="L_E_2b_feladat" value="wrong" class="L_K_Radio" />
+                        <p>Egy szorzat egyik tényezője akkor és csak akkor nulla, ha a szorzat nem nulla.</p>
+                    </label>
+                    <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                        <input type="radio" name="L_E_2b_feladat" value="correct" class="L_K_Radio" />
+                        <p>Egy szorzat legalább egyik tényezője akkor és csak akkor lehet nulla, ha a szorzat nulla.</p>
+                    </label>
+                    <div class="gomb" style="margin-bottom: 10px;">
+                        <button class="Ell_gomb" id="L_E_Ell_2b">Ellenőrzés</button>
+                    </div>
+                    <div class="Eltunt_elemek">
+                        <div class="Seged_feluletek" id="L_E_Seged_2b">
+                            <button class="Bezaro_gombok" id="L_E_Bezaro_2b">x</button>
+                            A mondat megfordításához fel kell cserélnünk a 2 tagmondatot. <br />
+                            <b>A helyes válasz:</b> <div class="blurryText">Egy szorzat legalább egyik tényezője akkor és csak akkor lehet nulla, ha a szorzat nulla.</div>
+                        </div>
+                        <div class="ures_mezo" id="L_E_ures_mezo_2b">Válassz ki egy opciót!</div>
+                        <div class="helyes_valasz" id="L_E_helyes_valasz_2b">Helyes válasz!</div>
+                    </div>
+                </div>
+                    <p style="margin-bottom:0;">c) Ha egy háromszög egyenlőszárú, akkor van két egyenlő szöge.</p>
+                    <div class="Valasz_felulet">
+                        <label class="H_K_6_Kerdes_elemek">
+                            <input type="radio" name="L_E_2c_feladat" value="wrong" class="L_K_Radio" />
+                            <p>Ha egy háromszög egyenlőszárú, akkor és csak akkor van két egyenlő szöge.</p>
+                        </label>
+                        <label class="H_K_6_Kerdes_elemek">
+                            <input type="radio" name="L_E_2c_feladat" value="wrong" class="L_K_Radio" />
+                            <p>Ha egy háromszög minden szöge egyenlő, akkor a háromszög egyenlőszárú.</p>
+                        </label>
+                        <label class="H_K_6_Kerdes_elemek">
+                            <input type="radio" name="L_E_2c_feladat" value="correct" class="L_K_Radio" />
+                            <p>Ha egy háromszögnek van két egyenlő szöge, akkor egyenlőszárú.</p>
+                        </label>
+                        <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                            <input type="radio" name="L_E_2c_feladat" value="wrong" class="L_K_Radio" />
+                            <p>Ha egy háromszög nem egyenlőszárú, akkor nincs két egyenlő szöge.</p>
+                            <div class="gomb">
+                                <button class="Ell_gomb" id="L_E_Ell_2c">Ellenőrzés</button>
+                            </div>
+                        </label>
+                        <div class="Eltunt_elemek">
+                            <div class="Seged_feluletek" id="L_E_Seged_2c">
+                                <button class="Bezaro_gombok" id="L_E_Bezaro_2c">x</button>
+                                A mondat megfordításához fel kell cserélnünk a 2 tagmondatot. <br />
+                                <b>A helyes válasz:</b> <div class="blurryText">Ha egy háromszögnek van két egyenlő szöge, akkor egyenlőszárú.</div>
+                            </div>
+                            <div class="ures_mezo" id="L_E_ures_mezo_2c">Válassz ki egy opciót!</div>
+                            <div class="helyes_valasz" id="L_E_helyes_valasz_2c">Helyes válasz!</div>
+                        </div>
+                    </div>
+                        <h2>3. Feladat</h2>
+                        <p>Értékeld ki igazságtábla segítségével a következő logikai műveleteket!</p>
+                        <p>a) $\neg A \land B$</p>
+                        <p>b) $A\lor (A \land B)$</p>
+                        <p>c) $\neg (A\land B)\land (A\lor \neg B)$</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
     <div class="Feladat_lista">
         <div class="Feladat_hatter">
             <h1 style="text-align:center">Statisztika emelt szint</h1>
