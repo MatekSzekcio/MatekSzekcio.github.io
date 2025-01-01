@@ -40,7 +40,7 @@ body {
     height: fit-content;
     padding: 20px;
     padding-top: 0px;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 #Koszonto {
@@ -116,7 +116,7 @@ body {
     width: 48%;
 }
 
-#H_K_Valasz_2a, #H_K_Valasz_2b, #H_K_Valasz_3, #H_K_Valasz_4 {
+#H_K_Valasz_2a, #H_K_Valasz_2b, #H_K_Valasz_3, #H_K_Valasz_4, #S_E_Valasz_1a, #S_E_Valasz_1b, #S_E_Valasz_1c, #S_E_Valasz_1d, #S_E_Valasz_1e, #S_E_Valasz_1f, #S_E_Valasz_1g, #S_E_Valasz_3a, #S_E_Valasz_3b, #S_E_Valasz_3c, #S_E_Valasz_3d, #S_E_Valasz_6a, #S_E_Valasz_6b, #S_E_Valasz_6c {
     width: 20%;
     margin-right: 10px;
     margin-left: 10px;
@@ -140,14 +140,14 @@ body {
     cursor: pointer;
 }
 
-.Ell_gomb:hover {
-    border-radius: 1px;
-    background-color: #5fc35f;
-}
+    .Ell_gomb:hover {
+        border-radius: 1px;
+        background-color: #5fc35f;
+    }
 
-.Valasz_label{
+.Valasz_label {
     display: flex;
-    align-items:center;
+    align-items: center;
     margin: 10px 0;
 }
 
@@ -174,9 +174,9 @@ body {
     margin: 0 7px 0 90px;
 }
 
-.Kerdes_elemek{
-    display:flex;
-    flex-direction:row;
+.Kerdes_elemek {
+    display: flex;
+    flex-direction: row;
     margin-top: 10px;
 }
 
@@ -218,16 +218,31 @@ body {
     transition: border-width 0.3s;
 }
 
+.L_E_Select_cuccosok3 {
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+    padding: 3px 0;
+    width: 120px;
+    appearance: none;
+    font-family: "Latin Modern math", sans-serif;
+    transition: border-color 0.3s;
+    transition: border-width 0.3s;
+}
+
 .Select_divek {
     display: flex;
     flex-direction: row;
     align-items: center;
-    cursor: pointer;
 }
 
 select:focus {
     border-color: #0066cc;
     outline: none;
+}
+
+select {
+    cursor: pointer;
 }
 
 option {
@@ -251,19 +266,63 @@ option {
     color: #831c1c;
     font-weight: bold;
 }
+
 .blurryText {
     transition: filter 0.3s ease;
     filter: blur(5px);
     display: inline;
 }
 
-    .blurryText:hover {
-        filter: blur(0);
+    .blurryText.no-blur {
+        filter: blur(0) !important;
     }
 
+.Seged_Igazsag_Tabla td:nth-child(3),
+.Seged_Igazsag_Tabla td:nth-child(4) {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+.Seged_Igazsag_Tabla td.no-blur {
+    filter: blur(0) !important;
+}
 
 .MathJax span {
     /* font-size: 100% !important; /* Nagyobb betűméret */
     /* margin: 0.5em auto; /* Margó hozzáadása a képletek köré */
     /* padding: 1em; /* Padding hozzáadása, hogy jobban helyezkedjenek el */
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td, th {
+    border: 1.5px solid black;
+    padding: 8px;
+}
+
+.Utolso_feladat_tabla{
+    
+}
+
+.Igazsag_tabla {
+    text-align: center;
+    table-layout: fixed;
+}
+
+.Igazsag_tabla_elso_sor {
+    background-color: #aeaeae;
+}
+
+.Igazsag_tabla_flex{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.Seged_Igazsag_Tabla {
+    text-align: center;
+    table-layout: fixed;
+    width: 90%;
 }

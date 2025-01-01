@@ -43,6 +43,108 @@
         <div class="Feladat_hatter">
             <h1 style="text-align:center">Halmazok emelt szint</h1>
             <h2>1. Feladat</h2>
+            <p>
+                Legyen a $H$ alaphalmaz $H=[-5;15]$, továbbá $A=[-2;7]$, $B=]1;10]$, $C=]6;11[$.
+                Határozd meg az alábbi halmazokat:
+            </p>
+            <p style="margin-bottom:0;">a) $A\cup B$</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_1a_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$]1; 7]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_1a_feladat" value="wrong" class="H_K_Radio" />
+                    <p> $[-2; 1]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_1a_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$[7; 10]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="H_E_1a_feladat" value="correct" class="H_K_Radio" />
+                    <p>$[-2; 10]$</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_E_Ell_1a">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_E_Seged_1a">
+                        <button class="Bezaro_gombok" id="H_E_Bezaro_1a">x</button>
+                        Minden, ami legalább $A$ vagy $B$ halmaznak eleme.
+                        Számegyenesen való ábrázolás segíthet.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$[-2; 10]$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_E_ures_mezo_1a">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="H_E_helyes_valasz_1a">Helyes válasz!</div>
+                </div>
+            </div>
+            <p style="margin-bottom:0;">b) $(A\cap B)\cup C$</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_1b_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$[-2; 11[$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_1b_feladat" value="correct" class="H_K_Radio" />
+                    <p> $]1; 11]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_1b_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$]6; 10]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="H_E_1b_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$]-2; 10[$</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_E_Ell_1b">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_E_Seged_1b">
+                        <button class="Bezaro_gombok" id="H_E_Bezaro_1b">x</button>
+                        $A$ metszet $B$ minden, ami $A$-nak és $B$-nek is eleme, vagyis $]1;7]$,
+                        ennek az uniója $C$-vel minden, ami legalább az egyiknek eleme.
+                        Számegyenesen való ábrázolás segíthet.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$]1; 11]$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_E_ures_mezo_1b">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="H_E_helyes_valasz_1b">Helyes válasz!</div>
+                </div>
+            </div>
+            <p style="margin-bottom:0;">c) $\overline{A}\cap (\overline{B}\cup C)$!</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_1c_feladat" value="correct" class="H_K_Radio" />
+                    <p>$]7; 11[$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_1c_feladat" value="wrong" class="H_K_Radio" />
+                    <p> $]6; 7]$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="H_E_1c_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$[-2; 11[$</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="H_E_1c_feladat" value="wrong" class="H_K_Radio" />
+                    <p>$]-2; 7[$</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="H_E_Ell_1c">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="H_E_Seged_1c">
+                        <button class="Bezaro_gombok" id="H_E_Bezaro_1c">x</button>
+                        $A$ komplementer minden, ami $H$-nak eleme, de $A$-nak nem, vagyis
+                        $[-5;-2[$ unió $]7;15]$, ennek a metszete $C$-vel minden, ami
+                        mindkettőnek az eleme. <br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$]7; 11[$</div>
+                    </div>
+                    <div class="ures_mezo" id="H_E_ures_mezo_1c">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="H_E_helyes_valasz_1c">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>2. Feladat</h2>
             <p>Döntsd el, hogy igazak-e a következő egyenlőségek!</p>
             <div class="Select_divek">
@@ -283,9 +385,9 @@
                 <div class="Eltunt_elemek">
                     <div class="Seged_feluletek" id="H_E_Seged_6">
                         <button class="Bezaro_gombok" id="H_E_Bezaro_6">x</button>
-                        70 matekos, 49 töris és 35 közgázos van, pontosan kettőt 6 tanár tud tanítani. 
+                        70 matekos, 49 töris és 35 közgázos van, pontosan kettőt 6 tanár tud tanítani.
                         Így ha x tanár polihisztor, akkor $70+49+35-6-2x=140$
-                        (Mert az összeadásnál kétszer számoltuk azt, aki kettőt tud tanítani, 
+                        (Mert az összeadásnál kétszer számoltuk azt, aki kettőt tud tanítani,
                         és háromszor azt, aki hármat).<br />
                         <b>A helyes válasz:</b> <div class="blurryText">$4$</div>
                     </div>
@@ -324,7 +426,6 @@
                     <div class="helyes_valasz" id="H_E_helyes_valasz_7">Helyes válasz!</div>
                 </div>
             </div>
-            <h2>8. Feladat</h2>
         </div>
     </div>
     <div class="Feladat_lista">
@@ -349,10 +450,10 @@
                 <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
                     <input type="radio" name="L_E_1a_feladat" value="wrong" class="L_K_Radio" />
                     <p>Van olyan hét, amikor minden nap motiváltnak érzem magam.</p>
-                    <div class="gomb">
-                        <button class="Ell_gomb" id="L_E_Ell_1a">Ellenőrzés</button>
-                    </div>
                 </label>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="L_E_Ell_1a">Ellenőrzés</button>
+                </div>
                 <div class="Eltunt_elemek">
                     <div class="Seged_feluletek" id="L_E_Seged_1a">
                         <button class="Bezaro_gombok" id="L_E_Bezaro_1a">x</button>
@@ -382,10 +483,10 @@
                 <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
                     <input type="radio" name="L_E_1b_feladat" value="correct" class="L_K_Radio" />
                     <p>Minden kockának van olyan oldala, ami nem lila.</p>
-                    <div class="gomb">
-                        <button class="Ell_gomb" id="L_E_Ell_1b">Ellenőrzés</button>
-                    </div>
                 </label>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="L_E_Ell_1b">Ellenőrzés</button>
+                </div>
                 <div class="Eltunt_elemek">
                     <div class="Seged_feluletek" id="L_E_Seged_1b">
                         <button class="Bezaro_gombok" id="L_E_Bezaro_1b">x</button>
@@ -414,10 +515,10 @@
                 <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
                     <input type="radio" name="L_E_1c_feladat" value="wrong" class="L_K_Radio" />
                     <p>Van olyan diák, aki szeret halmazos feladatokat megoldani.</p>
-                    <div class="gomb">
-                        <button class="Ell_gomb" id="L_E_Ell_1c">Ellenőrzés</button>
-                    </div>
                 </label>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="L_E_Ell_1c">Ellenőrzés</button>
+                </div>
                 <div class="Eltunt_elemek">
                     <div class="Seged_feluletek" id="L_E_Seged_1c">
                         <button class="Bezaro_gombok" id="L_E_Bezaro_1c">x</button>
@@ -430,7 +531,7 @@
             </div>
             <p style="margin-bottom:0;">d) Minden évben van olyan tantárgy, amelynek minden órájára felkészülök.</p>
             <div class="Valasz_felulet">
-                <label class="H_K_6_Kerdes_elemek">
+                <label class="H_K_6_Kerdes_elemek" style="height: 50px;">
                     <input type="radio" name="L_E_1d_feladat" value="wrong" class="L_K_Radio" />
                     <p>Van olyan év, amikor van olyan tárgy, aminek van olyan órája, amelyre nem készülök fel.</p>
                 </label>
@@ -480,10 +581,10 @@
                 <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
                     <input type="radio" name="L_E_2a_feladat" value="wrong" class="L_K_Radio" />
                     <p>Akkor osztható egy természetes szám öttel, ha nullára végződik.</p>
-                    <div class="gomb">
-                        <button class="Ell_gomb" id="L_E_Ell_2a">Ellenőrzés</button>
-                    </div>
                 </label>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="L_E_Ell_2a">Ellenőrzés</button>
+                </div>
                 <div class="Eltunt_elemek">
                     <div class="Seged_feluletek" id="L_E_Seged_2a">
                         <button class="Bezaro_gombok" id="L_E_Bezaro_2a">x</button>
@@ -494,111 +595,591 @@
                     <div class="helyes_valasz" id="L_E_helyes_valasz_2a">Helyes válasz!</div>
                 </div>
             </div>
-                <p style="margin-bottom:0;">b) Egy szorzat akkor és csak akkor nulla, ha legalább egyik tényezője nulla.</p>
-                <div class="Valasz_felulet">
-                    <label class="H_K_6_Kerdes_elemek">
-                        <input type="radio" name="L_E_2b_feladat" value="wrong" class="L_K_Radio" />
-                        <p>Egy szorzat nulla, ha legalább az egyik tényezője nulla.</p>
-                    </label>
-                    <label class="H_K_6_Kerdes_elemek">
-                        <input type="radio" name="L_E_2b_feladat" value="wrong" class="L_K_Radio" />
-                        <p>Egy szorzat akkor és csak akkor nulla, ha minden tényezője nulla.</p>
-                    </label>
-                    <label class="H_K_6_Kerdes_elemek">
-                        <input type="radio" name="L_E_2b_feladat" value="wrong" class="L_K_Radio" />
-                        <p>Egy szorzat egyik tényezője akkor és csak akkor nulla, ha a szorzat nem nulla.</p>
-                    </label>
-                    <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
-                        <input type="radio" name="L_E_2b_feladat" value="correct" class="L_K_Radio" />
-                        <p>Egy szorzat legalább egyik tényezője akkor és csak akkor lehet nulla, ha a szorzat nulla.</p>
-                    </label>
-                    <div class="gomb" style="margin-bottom: 10px;">
-                        <button class="Ell_gomb" id="L_E_Ell_2b">Ellenőrzés</button>
-                    </div>
-                    <div class="Eltunt_elemek">
-                        <div class="Seged_feluletek" id="L_E_Seged_2b">
-                            <button class="Bezaro_gombok" id="L_E_Bezaro_2b">x</button>
-                            A mondat megfordításához fel kell cserélnünk a 2 tagmondatot. <br />
-                            <b>A helyes válasz:</b> <div class="blurryText">Egy szorzat legalább egyik tényezője akkor és csak akkor lehet nulla, ha a szorzat nulla.</div>
-                        </div>
-                        <div class="ures_mezo" id="L_E_ures_mezo_2b">Válassz ki egy opciót!</div>
-                        <div class="helyes_valasz" id="L_E_helyes_valasz_2b">Helyes válasz!</div>
-                    </div>
+            <p style="margin-bottom:0;">b) Egy szorzat akkor és csak akkor nulla, ha legalább egyik tényezője nulla.</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_2b_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Egy szorzat nulla, ha legalább az egyik tényezője nulla.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_2b_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Egy szorzat akkor és csak akkor nulla, ha minden tényezője nulla.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_2b_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Egy szorzat egyik tényezője akkor és csak akkor nulla, ha a szorzat nem nulla.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="L_E_2b_feladat" value="correct" class="L_K_Radio" />
+                    <p>Egy szorzat legalább egyik tényezője akkor és csak akkor lehet nulla, ha a szorzat nulla.</p>
+                </label>
+                <div class="gomb" style="margin-bottom: 10px;">
+                    <button class="Ell_gomb" id="L_E_Ell_2b">Ellenőrzés</button>
                 </div>
-                    <p style="margin-bottom:0;">c) Ha egy háromszög egyenlőszárú, akkor van két egyenlő szöge.</p>
-                    <div class="Valasz_felulet">
-                        <label class="H_K_6_Kerdes_elemek">
-                            <input type="radio" name="L_E_2c_feladat" value="wrong" class="L_K_Radio" />
-                            <p>Ha egy háromszög egyenlőszárú, akkor és csak akkor van két egyenlő szöge.</p>
-                        </label>
-                        <label class="H_K_6_Kerdes_elemek">
-                            <input type="radio" name="L_E_2c_feladat" value="wrong" class="L_K_Radio" />
-                            <p>Ha egy háromszög minden szöge egyenlő, akkor a háromszög egyenlőszárú.</p>
-                        </label>
-                        <label class="H_K_6_Kerdes_elemek">
-                            <input type="radio" name="L_E_2c_feladat" value="correct" class="L_K_Radio" />
-                            <p>Ha egy háromszögnek van két egyenlő szöge, akkor egyenlőszárú.</p>
-                        </label>
-                        <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
-                            <input type="radio" name="L_E_2c_feladat" value="wrong" class="L_K_Radio" />
-                            <p>Ha egy háromszög nem egyenlőszárú, akkor nincs két egyenlő szöge.</p>
-                            <div class="gomb">
-                                <button class="Ell_gomb" id="L_E_Ell_2c">Ellenőrzés</button>
-                            </div>
-                        </label>
-                        <div class="Eltunt_elemek">
-                            <div class="Seged_feluletek" id="L_E_Seged_2c">
-                                <button class="Bezaro_gombok" id="L_E_Bezaro_2c">x</button>
-                                A mondat megfordításához fel kell cserélnünk a 2 tagmondatot. <br />
-                                <b>A helyes válasz:</b> <div class="blurryText">Ha egy háromszögnek van két egyenlő szöge, akkor egyenlőszárú.</div>
-                            </div>
-                            <div class="ures_mezo" id="L_E_ures_mezo_2c">Válassz ki egy opciót!</div>
-                            <div class="helyes_valasz" id="L_E_helyes_valasz_2c">Helyes válasz!</div>
-                        </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="L_E_Seged_2b">
+                        <button class="Bezaro_gombok" id="L_E_Bezaro_2b">x</button>
+                        A mondat megfordításához fel kell cserélnünk a 2 tagmondatot. <br />
+                        <b>A helyes válasz:</b> <div class="blurryText">Egy szorzat legalább egyik tényezője akkor és csak akkor lehet nulla, ha a szorzat nulla.</div>
                     </div>
-                        <h2>3. Feladat</h2>
-                        <p>Értékeld ki igazságtábla segítségével a következő logikai műveleteket!</p>
-                        <p>a) $\neg A \land B$</p>
-                        <p>b) $A\lor (A \land B)$</p>
-                        <p>c) $\neg (A\land B)\land (A\lor \neg B)$</p>
-                    </div>
+                    <div class="ures_mezo" id="L_E_ures_mezo_2b">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="L_E_helyes_valasz_2b">Helyes válasz!</div>
                 </div>
             </div>
+            <p style="margin-bottom:0;">c) Ha egy háromszög egyenlőszárú, akkor van két egyenlő szöge.</p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_2c_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Ha egy háromszög egyenlőszárú, akkor és csak akkor van két egyenlő szöge.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_2c_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Ha egy háromszög minden szöge egyenlő, akkor a háromszög egyenlőszárú.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="L_E_2c_feladat" value="correct" class="L_K_Radio" />
+                    <p>Ha egy háromszögnek van két egyenlő szöge, akkor egyenlőszárú.</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="L_E_2c_feladat" value="wrong" class="L_K_Radio" />
+                    <p>Ha egy háromszög nem egyenlőszárú, akkor nincs két egyenlő szöge.</p>
+                </label>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="L_E_Ell_2c">Ellenőrzés</button>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="L_E_Seged_2c">
+                        <button class="Bezaro_gombok" id="L_E_Bezaro_2c">x</button>
+                        A mondat megfordításához fel kell cserélnünk a 2 tagmondatot. <br />
+                        <b>A helyes válasz:</b> <div class="blurryText">Ha egy háromszögnek van két egyenlő szöge, akkor egyenlőszárú.</div>
+                    </div>
+                    <div class="ures_mezo" id="L_E_ures_mezo_2c">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="L_E_helyes_valasz_2c">Helyes válasz!</div>
+                </div>
+            </div>
+            <h2>3. Feladat</h2>
+            <p>Értékeld ki igazságtábla segítségével a következő logikai műveleteket!</p>
+            <p>a) $\neg A \land B$</p>
+            <div class="Igazsag_tabla_flex">
+                <table class="Igazsag_tabla">
+                    <tr class="Igazsag_tabla_elso_sor">
+                        <th>$\boldsymbol{A}$</th>
+                        <th>$\boldsymbol{B}$</th>
+                        <th>$\boldsymbol{\neg A \land B}$</th>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>I</td>
+                        <td>
+                            <div class="Select_divek">
+                                <select name="L_E_Opciók_3aa" class="L_E_Select_cuccosok3" id="L_E_Select_3aa">
+                                    <option value="" selected></option>
+                                    <option value="wrong">I</option>
+                                    <option value="correct">H</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>H</td>
+                        <td>
+                            <div class="Select_divek">
+                                <select name="L_E_Opciók_3ab" class="L_E_Select_cuccosok3" id="L_E_Select_3ab">
+                                    <option value="" selected></option>
+                                    <option value="wrong">I</option>
+                                    <option value="correct">H</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>I</td>
+                        <td>
+                            <div class="Select_divek">
+                                <select name="L_E_Opciók_3ac" class="L_E_Select_cuccosok3" id="L_E_Select_3ac">
+                                    <option value="" selected></option>
+                                    <option value="correct">I</option>
+                                    <option value="wrong">H</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>
+                            <div class="Select_divek">
+                                <select name="L_E_Opciók_3ad" class="L_E_Select_cuccosok3" id="L_E_Select_3ad">
+                                    <option value="" selected></option>
+                                    <option value="wrong">I</option>
+                                    <option value="correct">H</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="L_E_Ell_3a" style="height: 44px; align-self: end;">Ellenőrzés</button>
+                </div>
+            </div>
+            <div class="Eltunt_elemek">
+                <div class="Seged_feluletek" id="L_E_Seged_3a">
+                    <button class="Bezaro_gombok" id="L_E_Bezaro_3a">x</button>
+                    <table class="Seged_Igazsag_Tabla">
+                        <tr class="Igazsag_tabla_elso_sor">
+                            <th>$\boldsymbol{A}$</th>
+                            <th>$\boldsymbol{B}$</th>
+                            <th>$\boldsymbol{\neg A}$</th>
+                            <th>$\boldsymbol{\neg A \land B}$</th>
+                        </tr>
+                        <tr>
+                            <td>I</td>
+                            <td>I</td>
+                            <td>H</td>
+                            <td>H</td>
+                        </tr>
+                        <tr>
+                            <td>I</td>
+                            <td>H</td>
+                            <td>H</td>
+                            <td>H</td>
+                        </tr>
+                        <tr>
+                            <td>H</td>
+                            <td>I</td>
+                            <td>I</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>H</td>
+                            <td>H</td>
+                            <td>I</td>
+                            <td>H</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="ures_mezo" id="L_E_ures_mezo_3a">Válaszolj az összes helyes!</div>
+                <div class="helyes_valasz" id="L_E_helyes_valasz_3a">Helyes válasz!</div>
+            </div>
+            <p>b) $A\lor (A \land B)$</p>
+            <p>c) $\neg (A\land B)\land (A\lor \neg B)$</p>
         </div>
+    </div>
     <div class="Feladat_lista">
         <div class="Feladat_hatter">
             <h1 style="text-align:center">Statisztika emelt szint</h1>
             <h2>1. Feladat</h2>
             <p>
-                A tegnapi kosárlabda edzésen Anna és a barátai a következő 
-                számú kosarakat dobták: $35; 12; 24; 62; 29$.
-                a) Számítsd ki a dobott kosarak négyféle átlagát!
-                b) Mennyi az adathalmaz terjedelme, módusza és mediánja?
+                A tegnapi kosárlabda edzésen Anna és a barátai a következő
+                számú kosarakat dobták: 35; 12; 24; 62; 29.
             </p>
+            <div class="Valasz_felulet">
+
+                <p>a) Számítsd ki a dobott kosarak négyféle átlagát!</p>
+                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                    <div class="Valasz_label">
+                        <p>Számtani (aritmetikai) közép:</p>
+                    </div>
+                    <textarea class="Valasz" id="S_E_Valasz_1a" placeholder="Válasz..." rows="1"></textarea>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="S_E_Ell_1a">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="S_E_Seged_1a">
+                        <button class="Bezaro_gombok" id="S_E_Bezaro_1a">x</button>
+                        A videóban vagy a négyjegyű függvénytáblában található képletbe helyettesíts be!<br />
+                        $S=A= \frac{x_1+x_2+...+x_n}{n}$<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$32,4$</div>
+                    </div>
+                    <div class="ures_mezo" id="S_E_ures_mezo_1a">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="S_E_szam_check_1a">Csak valós számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="S_E_helyes_valasz_1a">Helyes válasz!</div>
+                </div>
+                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                    <div class="Valasz_label">
+                        <p>Mértani (geometriai) közép:</p>
+                    </div>
+                    <textarea class="Valasz" id="S_E_Valasz_1b" placeholder="Válasz..." rows="1"></textarea>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="S_E_Ell_1b">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="S_E_Seged_1b">
+                        <button class="Bezaro_gombok" id="S_E_Bezaro_1b">x</button>
+                        A videóban vagy a négyjegyű függvénytáblában található képletbe helyettesíts be!<br />
+                        $M=G= \sqrt[n]{a_1\cdot a_2\cdot ...\cdot a_n}$<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$28,29$</div>
+                    </div>
+                    <div class="ures_mezo" id="S_E_ures_mezo_1b">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="S_E_szam_check_1b">Csak valós számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="S_E_helyes_valasz_1b">Helyes válasz!</div>
+                </div>
+                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                    <div class="Valasz_label">
+                        <p>Harmonikus közép:</p>
+                    </div>
+                    <textarea class="Valasz" id="S_E_Valasz_1c" placeholder="Válasz..." rows="1"></textarea>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="S_E_Ell_1c">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="S_E_Seged_1c">
+                        <button class="Bezaro_gombok" id="S_E_Bezaro_1c">x</button>
+                        A videóban vagy a négyjegyű függvénytáblában található képletbe helyettesíts be!<br />
+                        $H = \frac{n}{\frac{1}{x_1}+\frac{1}{x_2}+...+\frac{1}{x_n}}$<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$24,49$</div>
+                    </div>
+                    <div class="ures_mezo" id="S_E_ures_mezo_1c">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="S_E_szam_check_1c">Csak valós számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="S_E_helyes_valasz_1c">Helyes válasz!</div>
+                </div>
+                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                    <div class="Valasz_label">
+                        <p>Négyzetes (kvadratikus) közép:</p>
+                    </div>
+                    <textarea class="Valasz" id="S_E_Valasz_1d" placeholder="Válasz..." rows="1"></textarea>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="S_E_Ell_1d">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="S_E_Seged_1d">
+                        <button class="Bezaro_gombok" id="S_E_Bezaro_1d">x</button>
+                        A videóban vagy a négyjegyű függvénytáblában található képletbe helyettesíts be!<br />
+                        $N=Q= \sqrt{\frac{a_1^2+a_2^2+...a_n^2}{n}}$<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$36,41$</div>
+                    </div>
+                    <div class="ures_mezo" id="S_E_ures_mezo_1d">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="S_E_szam_check_1d">Csak valós számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="S_E_helyes_valasz_1d">Helyes válasz!</div>
+                </div>
+                <p>b) Mennyi az adathalmaz terjedelme, módusza és mediánja?</p>
+                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                    <div class="Valasz_label">
+                        <p>Terjedelem:</p>
+                    </div>
+                    <textarea class="Valasz" id="S_E_Valasz_1e" placeholder="Válasz..." rows="1"></textarea>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="S_E_Ell_1e">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="S_E_Seged_1e">
+                        <button class="Bezaro_gombok" id="S_E_Bezaro_1e">x</button>
+                        A maximum és a minimum különbsége.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$50$</div>
+                    </div>
+                    <div class="ures_mezo" id="S_E_ures_mezo_1e">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="S_E_szam_check_1e">Csak nemnegatív valós számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="S_E_helyes_valasz_1e">Helyes válasz!</div>
+                </div>
+                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                    <div class="Valasz_label">
+                        <p>Módusz:</p>
+                    </div>
+                    <textarea class="Valasz" id="S_E_Valasz_1f" placeholder="Válasz..." rows="1"></textarea>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="S_E_Ell_1f">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="S_E_Seged_1f">
+                        <button class="Bezaro_gombok" id="S_E_Bezaro_1f">x</button>
+                        A leggyakoribb adat, itt minden csak egyszer szerepel, így nincs módusz.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">nincs</div>
+                    </div>
+                    <div class="ures_mezo" id="S_E_ures_mezo_1f">A mező nem lehet üres!</div>
+                    <div class="helyes_valasz" id="S_E_helyes_valasz_1f">Helyes válasz!</div>
+                </div>
+                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                    <div class="Valasz_label">
+                        <p>Medián:</p>
+                    </div>
+                    <textarea class="Valasz" id="S_E_Valasz_1g" placeholder="Válasz..." rows="1"></textarea>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="S_E_Ell_1g">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="S_E_Seged_1g">
+                        <button class="Bezaro_gombok" id="S_E_Bezaro_1g">x</button>
+                        Az adatokat növekvő sorrendben felírva a középső adat.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$29$</div>
+                    </div>
+                    <div class="ures_mezo" id="S_E_ures_mezo_1g">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="S_E_szam_check_1g">Csak valós számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="S_E_helyes_valasz_1g">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>2. Feladat</h2>
-            <p>A Matekosok a téli szünetben 
-            többször összegyűltek társasjátékozni, és 
-            minidg fel is jegyezték, hogy aznap hány új 
-            játékot próbáltak ki. A szünet végén felírták ezek 
-            négyféle középértékeit: 2,48; 3,48; 3; 2,05. 
-            Döntsd el, melyik szám melyik középérték!</p>
+            <p style="margin-bottom:0;">
+                A Matekosok a téli szünetben többször összegyűltek társasjátékozni,
+                és mindig fel is jegyezték, hogy aznap hány új játékot próbáltak ki.
+                A szünet végén felírták ezek négyféle középértékeit: 2,48; 3,48; 3; 2,05.
+                Döntsd el, melyik szám melyik középérték!
+            </p>
+            <div class="Valasz_felulet">
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="S_E_2_feladat" value="wrong" class="H_E_Radio" />
+                    <p>számtani: 2,48; mértani: 3; harmonikus: 3,48; négyzetes: 2,05</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="S_E_2_feladat" value="correct" class="H_E_Radio" />
+                    <p>számtani: 3; mértani: 2,48; harmonikus: 2,05; négyzetes: 3,48</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek">
+                    <input type="radio" name="S_E_2_feladat" value="wrong" class="H_E_Radio" />
+                    <p>számtani: 2,05; mértani: 2,48; harmonikus: 3; négyzetes: 3,48</p>
+                </label>
+                <label class="H_K_6_Kerdes_elemek" style="margin-bottom: 10px;">
+                    <input type="radio" name="S_E_2_feladat" value="wrong" class="H_E_Radio" />
+                    <p>számtani: 2,48; mértani: 3,48; harmonikus: 2,05; négyzetes: 3</p>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="S_E_Ell_2">Ellenőrzés</button>
+                    </div>
+                </label>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="S_E_Seged_2">
+                        <button class="Bezaro_gombok" id="S_E_Bezaro_2">x</button>
+                        Használd a HíMSüN vagy a HiGAnyaQ szabályt! Vagyis:
+                        harmonikus <= mértani(geometriai) <= számtani (aritmetikai)
+                        <= négyzetes (kvadratikus) <br />
+                        <b>A helyes válasz:</b> <div class="blurryText">számtani: 3; mértani: 2,48; harmonikus: 2,05; négyzetes: 3,48</div>
+                    </div>
+                    <div class="ures_mezo" id="S_E_ures_mezo_2">Válassz ki egy opciót!</div>
+                    <div class="helyes_valasz" id="S_E_helyes_valasz_2">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>3. Feladat</h2>
-            <p>Réka minden reggel zenét hallgat mielőtt elindul az egyetemre. 
-            A következő adathalmaz mutatja, hogy az utóbbi napokban hány zenét 
-            hallgatott meg reggel: 4; 8; 3; 4; 1; 2; 3; 7. Számold ki a sokaság 
-            szórását és relatív szórását, alsó és felső kvartilisét!</p>
+            <p>
+                Réka minden reggel zenét hallgat mielőtt elindul az egyetemre.
+                A következő adathalmaz mutatja, hogy az utóbbi napokban hány zenét
+                hallgatott meg reggel: 4; 8; 3; 4; 1; 2; 3; 7. Számold ki a sokaság
+                szórását, relatív szórását, alsó és felső kvartilisét!
+            </p>
+            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <div class="Valasz_label">
+                    <p>Szórás($\sigma$):</p>
+                </div>
+                <textarea class="Valasz" id="S_E_Valasz_3a" placeholder="Válasz..." rows="1"></textarea>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="S_E_Ell_3a">Ellenőrzés</button>
+                </div>
+            </div>
+            <div class="Eltunt_elemek">
+                <div class="Seged_feluletek" id="S_E_Seged_3a">
+                    <button class="Bezaro_gombok" id="S_E_Bezaro_3a">x</button>
+                    Számold ki az átlagot $\overline{x}=4$, majd helyettesíts be a szórás képletébe:
+                    $\sqrt{\frac{(x_1-\overline{x})^2+(x_2-\overline{x})^2+...+(x_n-\overline{x})^2}{n}}$<br />
+                    <b>A helyes válasz:</b> <div class="blurryText">$2,24$</div>
+                </div>
+                <div class="ures_mezo" id="S_E_ures_mezo_3a">A mező nem lehet üres!</div>
+                <div class="szam_check" id="S_E_szam_check_3a">Csak valós számokat adhatsz meg!</div>
+                <div class="helyes_valasz" id="S_E_helyes_valasz_3a">Helyes válasz!</div>
+            </div>
+            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <div class="Valasz_label">
+                    <p>Relatív szórás:</p>
+                </div>
+                <textarea class="Valasz" id="S_E_Valasz_3b" placeholder="Válasz..." rows="1"></textarea>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="S_E_Ell_3b">Ellenőrzés</button>
+                </div>
+            </div>
+            <div class="Eltunt_elemek">
+                <div class="Seged_feluletek" id="S_E_Seged_3b">
+                    <button class="Bezaro_gombok" id="S_E_Bezaro_3b">x</button>
+                    A szórás és az átlag hányadosa.<br />
+                    <b>A helyes válasz:</b> <div class="blurryText">$0,56$</div>
+                </div>
+                <div class="ures_mezo" id="S_E_ures_mezo_3b">A mező nem lehet üres!</div>
+                <div class="szam_check" id="S_E_szam_check_3b">Csak valós számokat adhatsz meg!</div>
+                <div class="helyes_valasz" id="S_E_helyes_valasz_3b">Helyes válasz!</div>
+            </div>
+            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <div class="Valasz_label">
+                    <p>Alsó kvartilis($Q_1$):</p>
+                </div>
+                <textarea class="Valasz" id="S_E_Valasz_3c" placeholder="Válasz..." rows="1"></textarea>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="S_E_Ell_3c">Ellenőrzés</button>
+                </div>
+            </div>
+            <div class="Eltunt_elemek">
+                <div class="Seged_feluletek" id="S_E_Seged_3c">
+                    <button class="Bezaro_gombok" id="S_E_Bezaro_3c">x</button>
+                    Az adatokat írd fel növekvő sorrendben, a sokaság alsó 50%-ának mediánját
+                    kell megadnod. Páros elemszám esetén ez a két középső elem számtani közepe.<br />
+                    <b>A helyes válasz:</b> <div class="blurryText">$2,5$</div>
+                </div>
+                <div class="ures_mezo" id="S_E_ures_mezo_3c">A mező nem lehet üres!</div>
+                <div class="szam_check" id="S_E_szam_check_3c">Csak valós számokat adhatsz meg!</div>
+                <div class="helyes_valasz" id="S_E_helyes_valasz_3c">Helyes válasz!</div>
+            </div>
+            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <div class="Valasz_label">
+                    <p>Felső kvartilis($Q_3$):</p>
+                </div>
+                <textarea class="Valasz" id="S_E_Valasz_3d" placeholder="Válasz..." rows="1"></textarea>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="S_E_Ell_3d">Ellenőrzés</button>
+                </div>
+            </div>
+            <div class="Eltunt_elemek">
+                <div class="Seged_feluletek" id="S_E_Seged_3d">
+                    <button class="Bezaro_gombok" id="S_E_Bezaro_3d">x</button>
+                    Az adatokat írd fel növekvő sorrendben, a sokaság felső 50%-ának mediánját
+                    kell megadnod. Páros elemszám esetén ez a két középső elem számtani közepe.<br />
+                    <b>A helyes válasz:</b> <div class="blurryText">$5,5$</div>
+                </div>
+                <div class="ures_mezo" id="S_E_ures_mezo_3d">A mező nem lehet üres!</div>
+                <div class="szam_check" id="S_E_szam_check_3d">Csak valós számokat adhatsz meg!</div>
+                <div class="helyes_valasz" id="S_E_helyes_valasz_3d">Helyes válasz!</div>
+            </div>
             <h2>4. Feladat</h2>
-            <p>Egy igazán szorgos diák beadandót ír. Múlthéten minden nap 
-            feljegyezte, hogy hány karaktert sikerült aznap legépelnie, és a 
-            hét végén ezek átlagát is kiszámolta, ám egy adat elveszett. Így az 
-            ismert adataink: 320; 405; 219; 571; 483; 222, az átlag pedig 334. 
-            Hány karaktert gépelt le a 7. napon? </p>
+            <p>
+                Egy igazán szorgos diák beadandót ír. Múlt héten minden nap feljegyezte, hogy hány
+                karaktert sikerült aznap legépelnie, és a hét végén ezek átlagát is kiszámolta, ám egy
+                adat elveszett. Így az ismert adataink: 320; 405; 219; 571; 483; 222, az átlag pedig 334.
+            </p>
+            <div class="Valasz_felulet">
+                <p class="Valasz_label">
+                    Hány karaktert gépelt le a 7. napon?<br />
+                </p>
+                <div class="Kerdes_elemek" style="margin-bottom: 10px;">
+                    <textarea class="Valasz" id="S_E_Valasz_4" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="S_E_Ell_4">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="S_E_Seged_4">
+                        <button class="Bezaro_gombok" id="S_E_Bezaro_4">x</button>
+                        Helyettesíts be az átlag képletébe a 7. értéket x-szel jelölve, vagyis:
+                        $\frac{320+405+219+571+483+222+x}{7}=334$, majd rendezd az egyenletet.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$118$</div>
+                    </div>
+                    <div class="ures_mezo" id="S_E_ures_mezo_4">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="S_E_szam_check_4">Csak valós számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="S_E_helyes_valasz_4">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>5. Feladat</h2>
+            <p>
+                Lajos gyakran sétáltatja a kutyáit, mivel sok van neki. Tegnap örökbefogadott
+                még 5 egyszínű és 4 foltos kutyát. Így az egyszínű kutyáinak aránya a korábbi 25%-ról
+                36%-ra nőtt.
+            </p>
+            <div class="Valasz_felulet">
+                <p class="Valasz_label">
+                    Hány kutyája volt eredetileg?<br />
+                </p>
+                <div class="Kerdes_elemek" style="margin-bottom: 10px;">
+                    <textarea class="Valasz" id="S_E_Valasz_5" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <div class="gomb">
+                        <button class="Ell_gomb" id="S_E_Ell_5">Ellenőrzés</button>
+                    </div>
+                </div>
+                <div class="Eltunt_elemek">
+                    <div class="Seged_feluletek" id="S_E_Seged_5">
+                        <button class="Bezaro_gombok" id="S_E_Bezaro_5">x</button>
+                        Jelölje az egyszínű kutyák számát $x$, a foltosakét $y$, ekkor felírható a
+                        következő egyenletrendszer: $\frac{x}{x+y}=0,25$ és $\frac{x+5}{x+5+y+4}=0,36$. Az
+                        egyenletrendszert rendezve $x=4$ és $y=12$.<br />
+                        <b>A helyes válasz:</b> <div class="blurryText">$16$</div>
+                    </div>
+                    <div class="ures_mezo" id="S_E_ures_mezo_5">A mező nem lehet üres!</div>
+                    <div class="szam_check" id="S_E_szam_check_5">Csak nemnegatív egész számokat adhatsz meg!</div>
+                    <div class="helyes_valasz" id="S_E_helyes_valasz_5">Helyes válasz!</div>
+                </div>
+            </div>
             <h2>6. Feladat</h2>
-            <h2>7. Feladat</h2>
-            <h2>8. Feladat</h2>
-            <h2>9. Feladat</h2>
-            <h2>10. Feladat</h2>
+            <p>
+                A tizenkettedik évfolyamon 90 diák írt irodalomból dolgozatot a héten,
+                az eredmények a következő gyakorisági táblázatban láthatók:
+            </p>
+            <table id="Utolso_feladat_tabla">
+                <tr>
+                    <td>Osztályzat</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Gyakoriság</td>
+                    <td>10</td>
+                    <td>12</td>
+                    <td>23</td>
+                    <td>28</td>
+                    <td>17</td>
+                </tr>
+            </table>
+            <p>Írd fel a sokaság mediánját és kvartiliseit!</p>
+            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <div class="Valasz_label">
+                    <p>Medián:</p>
+                </div>
+                <textarea class="Valasz" id="S_E_Valasz_6a" placeholder="Válasz..." rows="1"></textarea>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="S_E_Ell_6a">Ellenőrzés</button>
+                </div>
+            </div>
+            <div class="Eltunt_elemek">
+                <div class="Seged_feluletek" id="S_E_Seged_6a">
+                    <button class="Bezaro_gombok" id="S_E_Bezaro_6a">x</button>
+                    Páros elemszám esetén a két középső elem számtani közepe, ebben az
+                    esetben ez a 45. és 46. elemé.<br />
+                    <b>A helyes válasz:</b> <div class="blurryText">$3,5$</div>
+                </div>
+                <div class="ures_mezo" id="S_E_ures_mezo_6a">A mező nem lehet üres!</div>
+                <div class="szam_check" id="S_E_szam_check_6a">Csak valós számokat adhatsz meg!</div>
+                <div class="helyes_valasz" id="S_E_helyes_valasz_6a">Helyes válasz!</div>
+            </div>
+            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <div class="Valasz_label">
+                    <p>Alsó kvartilis($Q_1$):</p>
+                </div>
+                <textarea class="Valasz" id="S_E_Valasz_6b" placeholder="Válasz..." rows="1"></textarea>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="S_E_Ell_6b">Ellenőrzés</button>
+                </div>
+            </div>
+            <div class="Eltunt_elemek">
+                <div class="Seged_feluletek" id="S_E_Seged_6b">
+                    <button class="Bezaro_gombok" id="S_E_Bezaro_6b">x</button>
+                    Az adatsor alsó 50%-ának mediánja, vagyis a 23. elem.<br />
+                    <b>A helyes válasz:</b> <div class="blurryText">$3$</div>
+                </div>
+                <div class="ures_mezo" id="S_E_ures_mezo_6b">A mező nem lehet üres!</div>
+                <div class="szam_check" id="S_E_szam_check_6b">Csak valós számokat adhatsz meg!</div>
+                <div class="helyes_valasz" id="S_E_helyes_valasz_6b">Helyes válasz!</div>
+            </div>
+            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <div class="Valasz_label">
+                    <p>Felső kvartilis($Q_3$):</p>
+                </div>
+                <textarea class="Valasz" id="S_E_Valasz_6c" placeholder="Válasz..." rows="1"></textarea>
+                <div class="gomb">
+                    <button class="Ell_gomb" id="S_E_Ell_6c">Ellenőrzés</button>
+                </div>
+            </div>
+            <div class="Eltunt_elemek">
+                <div class="Seged_feluletek" id="S_E_Seged_6c">
+                    <button class="Bezaro_gombok" id="S_E_Bezaro_6c">x</button>
+                    Az adatsor felső 50%-ának mediánja, vagyis a 68. elem.<br />
+                    <b>A helyes válasz:</b> <div class="blurryText">$4$</div>
+                </div>
+                <div class="ures_mezo" id="S_E_ures_mezo_6c">A mező nem lehet üres!</div>
+                <div class="szam_check" id="S_E_szam_check_6c">Csak valós számokat adhatsz meg!</div>
+                <div class="helyes_valasz" id="S_E_helyes_valasz_6c">Helyes válasz!</div>
+            </div>
         </div>
     </div>
 </body>

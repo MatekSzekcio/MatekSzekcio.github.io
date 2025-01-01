@@ -908,3 +908,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 });
+
+//Blurry szórakozás
+
+document.addEventListener("DOMContentLoaded", function () {
+    const blurryTextElements = document.querySelectorAll(".blurryText");
+
+    blurryTextElements.forEach(element => {
+        element.addEventListener("mouseover", () => {
+            element.classList.add("no-blur");
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const tdElements = document.querySelectorAll('.Seged_Igazsag_Tabla td');
+    const thElements = document.querySelectorAll('.Seged_Igazsag_Tabla th');
+
+    tdElements.forEach(td => {
+        td.addEventListener('mouseover', () => {
+            if (!td.classList.contains('no-blur')) {
+                const columnIndex = Array.from(td.parentNode.children).indexOf(td);
+                thElements[columnIndex].classList.add('no-blur');
+                tdElements.forEach(cell => {
+                    if (Array.from(cell.parentNode.children).indexOf(cell) === columnIndex) {
+                        cell.classList.add('no-blur');
+                    }
+                });
+            }
+        });
+    });
+});
