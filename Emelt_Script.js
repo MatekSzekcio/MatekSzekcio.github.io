@@ -561,9 +561,61 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3aa1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3ab1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3ac1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3ad1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
 
 document.addEventListener('DOMContentLoaded', () => {
-    const selects = document.querySelectorAll('.L_E_Select_cuccosok3');
+    const selects = document.querySelectorAll('.L_E_Select_cuccosok3a');
     const checkButton = document.getElementById('L_E_Ell_3a');
 
     selects.forEach((select) => {
@@ -585,6 +637,488 @@ document.addEventListener('DOMContentLoaded', () => {
         const segedElem = document.getElementById("L_E_Seged_3a");
         const uresElem = document.getElementById("L_E_ures_mezo_3a");
         const valaszElem = document.getElementById("L_E_helyes_valasz_3a");
+
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+
+        selects.forEach((select) => {
+            if (select.value === '') {
+                select.style.borderColor = 'red';
+                select.style.borderWidth = '2px';
+                allSelected = false;
+            }
+        });
+
+        if (!allSelected) {
+            uresElem.style.display = "flex";
+            return;
+        }
+
+        selects.forEach((select) => {
+            if (select.value === 'correct') {
+                select.style.borderColor = 'green';
+                select.style.borderWidth = '2px';
+            } else if (select.value === 'wrong') {
+                select.style.borderColor = 'red';
+                select.style.borderWidth = '2px';
+                allCorrect = false;
+            }
+        });
+
+        if (!allCorrect) {
+            segedElem.style.display = "block";
+        } else {
+            valaszElem.style.display = "flex";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3ba').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3bb').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3bc').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3bd').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3ba1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3bb1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3bc1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3bd1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const selects = document.querySelectorAll('.L_E_Select_cuccosok3b');
+    const checkButton = document.getElementById('L_E_Ell_3b');
+
+    selects.forEach((select) => {
+        select.addEventListener('change', () => {
+            if (select.value === '') {
+                select.style.borderColor = 'red';
+                select.style.borderWidth = '2px';
+            } else {
+                select.style.borderColor = '';
+                select.style.borderWidth = '';
+            }
+        });
+    });
+
+    checkButton.addEventListener('click', () => {
+        let allSelected = true;
+        let allCorrect = true;
+
+        const segedElem = document.getElementById("L_E_Seged_3b");
+        const uresElem = document.getElementById("L_E_ures_mezo_3b");
+        const valaszElem = document.getElementById("L_E_helyes_valasz_3b");
+
+        uresElem.style.display = "none";
+        valaszElem.style.display = "none";
+        segedElem.style.display = "none";
+
+        selects.forEach((select) => {
+            if (select.value === '') {
+                select.style.borderColor = 'red';
+                select.style.borderWidth = '2px';
+                allSelected = false;
+            }
+        });
+
+        if (!allSelected) {
+            uresElem.style.display = "flex";
+            return;
+        }
+
+        selects.forEach((select) => {
+            if (select.value === 'correct') {
+                select.style.borderColor = 'green';
+                select.style.borderWidth = '2px';
+            } else if (select.value === 'wrong') {
+                select.style.borderColor = 'red';
+                select.style.borderWidth = '2px';
+                allCorrect = false;
+            }
+        });
+
+        if (!allCorrect) {
+            segedElem.style.display = "block";
+        } else {
+            valaszElem.style.display = "flex";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3ca1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3cb1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3cc1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3cd1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3ca2').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3cb2').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3cc2').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3cd2').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3ca3').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3cb3').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3cc3').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3cd3').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3ce1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3ce2').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3cf1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3cf2').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3cg1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3cg2').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3ch1').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('L_E_Select_3ch2').addEventListener('change', function () {
+        const selectElement = this;
+        const firstOption = selectElement.querySelector('option[value=""]');
+
+        if (selectElement.value !== "") {
+            firstOption.disabled = true;
+        } else {
+            firstOption.disabled = false;
+        }
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const selects = document.querySelectorAll('.L_E_Select_cuccosok3c');
+    const checkButton = document.getElementById('L_E_Ell_3c');
+
+    selects.forEach((select) => {
+        select.addEventListener('change', () => {
+            if (select.value === '') {
+                select.style.borderColor = 'red';
+                select.style.borderWidth = '2px';
+            } else {
+                select.style.borderColor = '';
+                select.style.borderWidth = '';
+            }
+        });
+    });
+
+    checkButton.addEventListener('click', () => {
+        let allSelected = true;
+        let allCorrect = true;
+
+        const segedElem = document.getElementById("L_E_Seged_3c");
+        const uresElem = document.getElementById("L_E_ures_mezo_3c");
+        const valaszElem = document.getElementById("L_E_helyes_valasz_3c");
 
         uresElem.style.display = "none";
         valaszElem.style.display = "none";
@@ -1237,6 +1771,22 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("L_E_Bezaro_3a").addEventListener("click", function () {
         const segedElem = document.getElementById("L_E_Seged_3a");
+        segedElem.style.display = "none";
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("L_E_Bezaro_3b").addEventListener("click", function () {
+        const segedElem = document.getElementById("L_E_Seged_3b");
+        segedElem.style.display = "none";
+
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("L_E_Bezaro_3c").addEventListener("click", function () {
+        const segedElem = document.getElementById("L_E_Seged_3c");
         segedElem.style.display = "none";
 
     });

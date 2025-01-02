@@ -159,7 +159,7 @@ body {
 
 .Seged_feluletek {
     display: none;
-    max-height: 200px;
+    max-height: fit-content;
     padding: 20px;
     margin-bottom: 10px;
     background-color: #f5bfbf;
@@ -218,7 +218,7 @@ body {
     transition: border-width 0.3s;
 }
 
-.L_E_Select_cuccosok3 {
+.L_E_Select_cuccosok3a, .L_E_Select_cuccosok3b, .L_E_Select_cuccosok3c {
     border-radius: 20px;
     text-align: center;
     font-size: 15px;
@@ -243,6 +243,7 @@ select:focus {
 
 select {
     cursor: pointer;
+    margin:auto;
 }
 
 option {
@@ -287,6 +288,27 @@ option {
     filter: blur(0) !important;
 }
 
+.Seged_Igazsag_Tabla1 td:nth-child(3),
+.Seged_Igazsag_Tabla1 td:nth-child(4),
+.Seged_Igazsag_Tabla1 td:nth-child(5) {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+.Seged_Igazsag_Tabla1 td.no-blur {
+    filter: blur(0) !important;
+}
+
+.Seged_Igazsag_Tabla2 td:nth-child(1),
+.Seged_Igazsag_Tabla2 td:nth-child(2) {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+.Seged_Igazsag_Tabla2 td.no-blur {
+    filter: blur(0) !important;
+}
+
 .MathJax span {
     /* font-size: 100% !important; /* Nagyobb betűméret */
     /* margin: 0.5em auto; /* Margó hozzáadása a képletek köré */
@@ -303,13 +325,10 @@ td, th {
     padding: 8px;
 }
 
-.Utolso_feladat_tabla{
-    
-}
-
 .Igazsag_tabla {
     text-align: center;
     table-layout: fixed;
+    width: 70%;
 }
 
 .Igazsag_tabla_elso_sor {
@@ -325,4 +344,11 @@ td, th {
     text-align: center;
     table-layout: fixed;
     width: 90%;
+}
+
+.Seged_Igazsag_Tabla1, .Seged_Igazsag_Tabla2 {
+    text-align: center;
+    table-layout: fixed;
+    width: 90%;
+    margin-bottom: 10px;
 }
