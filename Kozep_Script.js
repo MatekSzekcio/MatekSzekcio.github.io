@@ -1040,7 +1040,6 @@ function generateNavigationLinks(navLinksContainer, taskSection, idPrefix) {
         navLinksContainer.appendChild(listItem);
     });
 
-    // Smooth scroll effect
     navLinksContainer.querySelectorAll('a').forEach(anchor => {
         anchor.addEventListener('click', function (event) {
             event.preventDefault();
@@ -1054,4 +1053,3 @@ function generateNavigationLinks(navLinksContainer, taskSection, idPrefix) {
         });
     });
 }
-
