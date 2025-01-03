@@ -387,16 +387,15 @@ td, th {
     }
 
         .navigation_panel li:hover {
+            color: black;
             font-weight: bold;
             background-color: #eeeeee;
-
         }
 
 .Panel_label{
     font-weight: bold;
     font-size: 25px;
-    margin-bottom: 10px;
-    margin-left: 5px;
+    margin: 0 10px 10px 5px;
 }
 
 .Panel_label_vonal {
