@@ -40,12 +40,20 @@
 
 </head>
 <body>
-    <div class="Feladat_lista">
+    <!--
+        <div class="navigation_panel">
+            Halmazok
+            <ul id="H_K_nav_links"></ul>
+            Logika
+            <ul id="L_K_nav_links"></ul>
+        </div>
+        -->
+    <div class="Feladat_lista" id="H_K_Panelhez_id">
         <div class="Feladat_hatter">
             <h1 style="text-align:center">Halmazok középszint</h1>
             <h2>1. feladat</h2>
             <p>
-                Tudjuk, hogy $A\{1;3;4;7;9;11;18\}$, $B\{2;4;6;8;10;12;14;16;18\}$, $C\{1;2;3;4;5;6;7;8;9\}$.
+                Tudjuk, hogy $A=\{1;3;4;7;9;11;18\}$, $B=\{2;4;6;8;10;12;14;16;18\}$, $C=\{1;2;3;4;5;6;7;8;9\}$.
                 Az alaphalmaz a három halmaz úniója.
                 Pontosvesszővel elválasztva, növekvő sorrendben (pl.: 1; 2; 3) sorold fel a következő halmazműveletek eredményeit:
             </p>
@@ -163,14 +171,12 @@
             <h2>3. feladat</h2>
             <p>
                 Egy 12 fős krampusz gárdában 7-en rendelkeznek vasvillával, 4-en virgáccsal,
-                egyedül a fő krampusznak van mindkettő. Hány olyan krampusz van a gárdában, akinek semmije sincs?
+                egyedül a fő krampusznak van mindkettő.
             </p>
             <div class="Valasz_felulet">
+                <p class="Valasz_label">Hány olyan krampusz van a gárdában, akinek semmije sincs? <br /></p>
                 <div class="Kerdes_elemek">
-                    <p class="Valasz_label">
-                        $|A|=$
-                    </p>
-                    <textarea class="Valasz" id="H_K_Valasz_3" placeholder="Válasz..." rows="1"></textarea> <br>
+                    <textarea class="Valasz" id="H_K_Valasz_3" placeholder="Válasz..." rows="1" style="width: 40%; margin-left:0;"></textarea> <br>
                     <div class="gomb">
                         <button class="Ell_gomb" id="H_K_Ell_3">Ellenőrzés</button>
                     </div>
@@ -348,7 +354,7 @@
                 </label>
                 <label class="H_K_6_Kerdes_elemek">
                     <input type="radio" name="H_K_7b_feladat" value="correct" class="H_K_Radio" />
-                    <p> $]1; 11]$</p>
+                    <p> $]1; 11[$</p>
                 </label>
                 <label class="H_K_6_Kerdes_elemek">
                     <input type="radio" name="H_K_7b_feladat" value="wrong" class="H_K_Radio" />
@@ -367,13 +373,13 @@
                         $A$ metszet $B$ minden, ami $A$-nak és $B$-nek is eleme, vagyis $]1;7]$,
                         ennek az uniója $C$-vel minden, ami legalább az egyiknek eleme.
                         Számegyenesen való ábrázolás segíthet.<br />
-                        <b>A helyes válasz:</b> <div class="blurryText">$]1; 11]$</div>
+                        <b>A helyes válasz:</b> <div class="blurryText">$]1; 11[$</div>
                     </div>
                     <div class="ures_mezo" id="H_K_ures_mezo_7b">Válassz ki egy opciót!</div>
                     <div class="helyes_valasz" id="H_K_helyes_valasz_7b">Helyes válasz!</div>
                 </div>
             </div>
-            <p style="margin-bottom:0;">c) $\overline{A}\cap (\overline{B}\cup C)$!</p>
+            <p style="margin-bottom:0;">c) $\overline{A}\cap C$!</p>
             <div class="Valasz_felulet">
                 <label class="H_K_6_Kerdes_elemek">
                     <input type="radio" name="H_K_7c_feladat" value="correct" class="H_K_Radio" />
@@ -408,7 +414,7 @@
             </div>
         </div>
     </div>
-    <div class="Feladat_lista">
+    <div class="Feladat_lista" id="L_K_Panelhez_id">
         <div class="Feladat_hatter">
             <h1 style="text-align:center">Logika középszint</h1>
             <h2>1. Feladat</h2>
@@ -712,4 +718,4 @@
         </div>
     </div>
 </body>
-</html>
+    </html>

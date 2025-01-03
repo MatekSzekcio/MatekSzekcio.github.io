@@ -30,6 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .Feladat_hatter {
@@ -352,3 +353,35 @@ td, th {
     width: 90%;
     margin-bottom: 10px;
 }
+
+.navigation-panel {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+    .navigation-panel ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation-panel li {
+        margin-bottom: 10px;
+    }
+
+    .navigation-panel a {
+        text-decoration: none;
+        color: #333;
+    }
+
+        .navigation-panel a:hover {
+            text-decoration: underline;
+            color: #007BFF;
+        }
