@@ -31,7 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 150px;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .Feladat_hatter {
@@ -174,7 +174,7 @@ body {
     overflow: hidden;
     height: fit-content;
     width: fit-content;
-    margin: 0 7px 0 90px;
+    margin: 10px 7px 0 0;
 }
 
 .Kerdes_elemek {
@@ -356,7 +356,7 @@ td, th {
     margin-bottom: 10px;
 }
 
-.navigation_panel {
+.navigation_panel, .navigation_panel_emelt {
     position: fixed;
     top: 10px;
     left: 10px;
@@ -369,28 +369,28 @@ td, th {
     border: 2px solid #211c1c;
 }
 
-    .navigation_panel ul {
+    .navigation_panel ul, .navigation_panel_emelt ul {
         list-style: none;
         padding: 0;
         margin: 0;
     }
 
-    .navigation_panel li {
+    .navigation_panel li, .navigation_panel_emelt li {
         margin-bottom: 5px;
         border-radius: 7px;
     }
 
-    .navigation_panel a {
+    .navigation_panel a, .navigation_panel_emelt a {
         text-decoration: none;
         color: #333;
         padding: 5px;
     }
 
-        .navigation_panel li:hover {
-            color: black;
-            font-weight: bold;
-            background-color: #eeeeee;
-        }
+    .navigation_panel li:hover, .navigation_panel_emelt li:hover {
+        color: black;
+        font-weight: bold;
+        background-color: #eeeeee;
+    }
 
 .Panel_label{
     font-weight: bold;
@@ -407,7 +407,6 @@ td, th {
 .Vissza_gomb {
     font-weight: bold;
     font-size: 25px;
-    margin-left: 5px;
     padding: 5px 5px;
     border: none;
     border-radius: 5px;
@@ -416,4 +415,25 @@ td, th {
 
     .Vissza_gomb:hover {
         background-color: #eeeeee;
+    }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #606060;
+    border-radius: 5px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #404040;
     }

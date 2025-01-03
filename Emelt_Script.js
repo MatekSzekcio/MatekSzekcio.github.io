@@ -1927,3 +1927,88 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 });
+
+//Emelt panel
+
+document.addEventListener('DOMContentLoaded', () => {
+    const firstNavLinksContainer = document.getElementById('H_E_nav_links');
+    const firstTaskSection = document.getElementById('H_E_Panelhez_id');
+    generateNavigationLinks(firstNavLinksContainer, firstTaskSection, 'H_E_Panelhez_id-');
+
+    const secondNavLinksContainer = document.getElementById('L_E_nav_links');
+    const secondTaskSection = document.getElementById('L_E_Panelhez_id');
+    generateNavigationLinks(secondNavLinksContainer, secondTaskSection, 'L_E_Panelhez_id-');
+
+    const thirdNavLinksContainer = document.getElementById('S_E_nav_links');
+    const thirdTaskSection = document.getElementById('S_E_Panelhez_id');
+    generateNavigationLinks(thirdNavLinksContainer, thirdTaskSection, 'S_E_Panelhez_id-');
+
+    window.addEventListener('scroll', () => {
+        highlightActiveLink();
+    });
+
+    function highlightActiveLink() {
+        const headings = document.querySelectorAll('h2');
+        let closestHeading = null;
+
+        headings.forEach(heading => {
+            const rect = heading.getBoundingClientRect();
+
+            if (rect.top <= 0 && rect.bottom > 0) {
+                if (!closestHeading || rect.top > closestHeading.getBoundingClientRect().top) {
+                    closestHeading = heading;
+                }
+            }
+        });
+
+        if (closestHeading) {
+            document.querySelectorAll('.navigation_panel_emelt li').forEach(item => {
+                item.style.backgroundColor = '';
+            });
+
+            const activeLink = document.querySelector(`a[href="#${closestHeading.id}"]`).parentElement;
+            activeLink.style.backgroundColor = '#bcbcbc';
+        }
+    }
+
+});
+
+function generateNavigationLinks(navLinksContainer, taskSection, idPrefix) {
+    if (!navLinksContainer || !taskSection) return;
+
+    navLinksContainer.innerHTML = '';
+    const headings = taskSection.querySelectorAll('h2');
+
+    headings.forEach((heading, index) => {
+        if (!heading.id) {
+            heading.id = `${idPrefix}${index + 1}`;
+        }
+
+        const link = document.createElement('a');
+        link.href = `#${heading.id}`;
+        link.textContent = heading.textContent;
+
+        const listItem = document.createElement('li');
+        listItem.appendChild(link);
+        navLinksContainer.appendChild(listItem);
+    });
+
+    navLinksContainer.querySelectorAll('a').forEach(anchor => {
+        anchor.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            window.scrollTo({
+                top: targetElement.offsetTop - 10,
+                behavior: 'smooth'
+            });
+        });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector('.Vissza_gomb').addEventListener('click', function () {
+        window.location.href = 'https://matekszekcio.github.io/';
+    });
+});

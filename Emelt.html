@@ -39,7 +39,19 @@
     </script>
 </head>
 <body>
-    <div class="Feladat_lista">
+    <div class="navigation_panel_emelt">
+        <div class="Vissza_gomb">Vissza</div>
+        <hr class="Panel_label_vonal" />
+        <div class="Panel_label">Halmazok</div>
+        <ul id="H_E_nav_links"></ul>
+        <hr class="Panel_label_vonal" />
+        <div class="Panel_label">Logika</div>
+        <ul id="L_E_nav_links"></ul>
+        <hr class="Panel_label_vonal" />
+        <div class="Panel_label">Statisztika</div>
+        <ul id="S_E_nav_links"></ul>
+    </div>
+    <div class="Feladat_lista" id="H_E_Panelhez_id">
         <div class="Feladat_hatter">
             <h1 style="text-align:center">Halmazok emelt szint</h1>
             <h2>1. Feladat</h2>
@@ -428,7 +440,7 @@
             </div>
         </div>
     </div>
-    <div class="Feladat_lista">
+    <div class="Feladat_lista" id="L_E_Panelhez_id">
         <div class="Feladat_hatter">
             <h1 style="text-align:center">Logika emelt szint</h1>
             <h2>1. Feladat</h2>
@@ -1232,7 +1244,7 @@
             </div>
         </div>
     </div>
-    <div class="Feladat_lista">
+    <div class="Feladat_lista" id="S_E_Panelhez_id">
         <div class="Feladat_hatter">
             <h1 style="text-align:center">Statisztika emelt szint</h1>
             <h2>1. Feladat</h2>
@@ -1242,8 +1254,9 @@
             </p>
             <div class="Valasz_felulet">
 
-                <p>a) Számítsd ki a dobott kosarak 4-féle átlagát!</p>
-                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <p>a) Számítsd ki a dobott kosarak 4-féle átlagát! Az eredményed 2 tizedes jegyre kerekítsd,
+                és tizedesvesszőt használj tizedespont helyett!</p>
+                <div class="Kerdes_elemek" style="height:44px">
                     <div class="Valasz_label">
                         <p>Számtani (aritmetikai) közép:</p>
                     </div>
@@ -1263,7 +1276,7 @@
                     <div class="szam_check" id="S_E_szam_check_1a">Csak valós számokat adhatsz meg!</div>
                     <div class="helyes_valasz" id="S_E_helyes_valasz_1a">Helyes válasz!</div>
                 </div>
-                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <div class="Kerdes_elemek" style="height:44px;">
                     <div class="Valasz_label">
                         <p>Mértani (geometriai) közép:</p>
                     </div>
@@ -1283,7 +1296,7 @@
                     <div class="szam_check" id="S_E_szam_check_1b">Csak valós számokat adhatsz meg!</div>
                     <div class="helyes_valasz" id="S_E_helyes_valasz_1b">Helyes válasz!</div>
                 </div>
-                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <div class="Kerdes_elemek" style="height:44px;">
                     <div class="Valasz_label">
                         <p>Harmonikus közép:</p>
                     </div>
@@ -1303,7 +1316,7 @@
                     <div class="szam_check" id="S_E_szam_check_1c">Csak valós számokat adhatsz meg!</div>
                     <div class="helyes_valasz" id="S_E_helyes_valasz_1c">Helyes válasz!</div>
                 </div>
-                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <div class="Kerdes_elemek" style="height:44px;">
                     <div class="Valasz_label">
                         <p>Négyzetes (kvadratikus) közép:</p>
                     </div>
@@ -1324,7 +1337,7 @@
                     <div class="helyes_valasz" id="S_E_helyes_valasz_1d">Helyes válasz!</div>
                 </div>
                 <p>b) Mennyi az adathalmaz terjedelme, módusza és mediánja?</p>
-                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <div class="Kerdes_elemek" style="height:44px;">
                     <div class="Valasz_label">
                         <p>Terjedelem:</p>
                     </div>
@@ -1343,7 +1356,7 @@
                     <div class="szam_check" id="S_E_szam_check_1e">Csak nemnegatív valós számokat adhatsz meg!</div>
                     <div class="helyes_valasz" id="S_E_helyes_valasz_1e">Helyes válasz!</div>
                 </div>
-                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <div class="Kerdes_elemek" style="height:44px;">
                     <div class="Valasz_label">
                         <p>Módusz:</p>
                     </div>
@@ -1361,7 +1374,7 @@
                     <div class="ures_mezo" id="S_E_ures_mezo_1f">A mező nem lehet üres!</div>
                     <div class="helyes_valasz" id="S_E_helyes_valasz_1f">Helyes válasz!</div>
                 </div>
-                <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+                <div class="Kerdes_elemek" style="height:44px;">
                     <div class="Valasz_label">
                         <p>Medián:</p>
                     </div>
@@ -1427,7 +1440,7 @@
                 hallgatott meg reggel: 4; 8; 3; 4; 1; 2; 3; 7. Számold ki a sokaság
                 szórását, relatív szórását, alsó és felső kvartilisét!
             </p>
-            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+            <div class="Kerdes_elemek" style="height:44px;">
                 <div class="Valasz_label">
                     <p>Szórás($\sigma$):</p>
                 </div>
@@ -1447,7 +1460,7 @@
                 <div class="szam_check" id="S_E_szam_check_3a">Csak valós számokat adhatsz meg!</div>
                 <div class="helyes_valasz" id="S_E_helyes_valasz_3a">Helyes válasz!</div>
             </div>
-            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+            <div class="Kerdes_elemek" style="height:44px;">
                 <div class="Valasz_label">
                     <p>Relatív szórás:</p>
                 </div>
@@ -1466,7 +1479,7 @@
                 <div class="szam_check" id="S_E_szam_check_3b">Csak valós számokat adhatsz meg!</div>
                 <div class="helyes_valasz" id="S_E_helyes_valasz_3b">Helyes válasz!</div>
             </div>
-            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+            <div class="Kerdes_elemek" style="height:44px;">
                 <div class="Valasz_label">
                     <p>Alsó kvartilis($Q_1$):</p>
                 </div>
@@ -1486,7 +1499,7 @@
                 <div class="szam_check" id="S_E_szam_check_3c">Csak valós számokat adhatsz meg!</div>
                 <div class="helyes_valasz" id="S_E_helyes_valasz_3c">Helyes válasz!</div>
             </div>
-            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+            <div class="Kerdes_elemek" style="height:44px;">
                 <div class="Valasz_label">
                     <p>Felső kvartilis($Q_3$):</p>
                 </div>
@@ -1587,7 +1600,7 @@
                 </tr>
             </table>
             <p>Írd fel a sokaság mediánját és kvartiliseit!</p>
-            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+            <div class="Kerdes_elemek" style="height:44px;">
                 <div class="Valasz_label">
                     <p>Medián:</p>
                 </div>
@@ -1607,7 +1620,7 @@
                 <div class="szam_check" id="S_E_szam_check_6a">Csak valós számokat adhatsz meg!</div>
                 <div class="helyes_valasz" id="S_E_helyes_valasz_6a">Helyes válasz!</div>
             </div>
-            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+            <div class="Kerdes_elemek" style="height:44px;">
                 <div class="Valasz_label">
                     <p>Alsó kvartilis($Q_1$):</p>
                 </div>
@@ -1626,7 +1639,7 @@
                 <div class="szam_check" id="S_E_szam_check_6b">Csak valós számokat adhatsz meg!</div>
                 <div class="helyes_valasz" id="S_E_helyes_valasz_6b">Helyes válasz!</div>
             </div>
-            <div class="Kerdes_elemek" style="height:44px; margin-bottom:10px;">
+            <div class="Kerdes_elemek" style="height:44px;">
                 <div class="Valasz_label">
                     <p>Felső kvartilis($Q_3$):</p>
                 </div>
