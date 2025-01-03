@@ -1943,6 +1943,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const thirdTaskSection = document.getElementById('S_E_Panelhez_id');
     generateNavigationLinks(thirdNavLinksContainer, thirdTaskSection, 'S_E_Panelhez_id-');
 
+    const forthNavLinksContainer = document.getElementById('Extra_E_nav_links');
+    const forthTaskSection = document.getElementById('Extra_E_Panelhez_id');
+    generateNavigationLinks(forthNavLinksContainer, forthTaskSection, 'Extra_E_Panelhez_id-');
+
     window.addEventListener('scroll', () => {
         highlightActiveLink();
     });

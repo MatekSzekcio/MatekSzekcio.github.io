@@ -428,3 +428,16 @@ td, th {
     ::-webkit-scrollbar-thumb:hover {
         background: #404040;
     }
+
+.Hivatkozasok {
+    text-decoration: none;
+    font-weight: bold;
+    color: #e20c0c
+}
+
+.Extra_feladat_flex{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    height: 44px;
+}

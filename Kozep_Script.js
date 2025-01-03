@@ -989,6 +989,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const secondTaskSection = document.getElementById('L_K_Panelhez_id');
     generateNavigationLinks(secondNavLinksContainer, secondTaskSection, 'L_K_Panelhez_id-');
 
+    const thirdNavLinksContainer = document.getElementById('Extra_K_nav_links');
+    const thirdTaskSection = document.getElementById('Extra_K_Panelhez_id');
+    generateNavigationLinks(thirdNavLinksContainer, thirdTaskSection, 'Extra_K_Panelhez_id-');
+
     window.addEventListener('scroll', () => {
         highlightActiveLink();
     });
