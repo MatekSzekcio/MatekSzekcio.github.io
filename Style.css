@@ -312,12 +312,6 @@ option {
     filter: blur(0) !important;
 }
 
-.MathJax span {
-    /* font-size: 100% !important; /* Nagyobb betűméret */
-    /* margin: 0.5em auto; /* Margó hozzáadása a képletek köré */
-    /* padding: 1em; /* Padding hozzáadása, hogy jobban helyezkedjenek el */
-}
-
 table {
     border-collapse: collapse;
     width: 50%;
@@ -421,19 +415,16 @@ td, th {
     width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 5px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #606060;
     border-radius: 5px;
 }
 
-    /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
         background: #404040;
     }
