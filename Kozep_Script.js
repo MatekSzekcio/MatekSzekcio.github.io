@@ -1055,6 +1055,6 @@ function generateNavigationLinks(navLinksContainer, taskSection, idPrefix) {
 
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector('.Vissza_gomb').addEventListener('click', function () {
-        window.location.href = 'Index.html';
+        window.location.href = 'https://matekszekcio.github.io/';
     });
 });
