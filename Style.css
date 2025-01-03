@@ -43,6 +43,7 @@ body {
     padding: 20px;
     padding-top: 0px;
     margin-bottom: 40px;
+    border: 1px solid #211c1c;
 }
 
 #Koszonto {
@@ -365,6 +366,7 @@ td, th {
     border-radius: 5px;
     max-height: 90vh;
     overflow-y: auto;
+    border: 2px solid #211c1c;
 }
 
     .navigation_panel ul {
@@ -375,18 +377,18 @@ td, th {
 
     .navigation_panel li {
         margin-bottom: 5px;
+        border-radius: 7px;
     }
 
     .navigation_panel a {
         text-decoration: none;
         color: #333;
         padding: 5px;
-        border-radius: 7px;
     }
 
-        .navigation_panel a:hover {
+        .navigation_panel li:hover {
             font-weight: bold;
-            background-color: white;
+            background-color: #eeeeee;
         }
 
 .Panel_label{
@@ -401,3 +403,17 @@ td, th {
     border-width: 0;
     background-color: #333333;
 }
+
+.Vissza_gomb {
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 5px;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .Vissza_gomb:hover {
+        background-color: #eeeeee;
+    }

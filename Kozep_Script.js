@@ -981,54 +981,53 @@ document.addEventListener("DOMContentLoaded", function () {
 //Közép Panel
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Elsõ szekció
-    const firstNavLinksContainer = document.getElementById('nav-links');
-    const firstTaskSection = document.getElementById('task-section');
-    generateNavigationLinks(firstNavLinksContainer, firstTaskSection, 'task-section-');
-
-    // Második szekció
-    const secondNavLinksContainer = document.getElementById('nav-linkss');
-    const secondTaskSection = document.getElementById('other-section');
-    generateNavigationLinks(secondNavLinksContainer, secondTaskSection, 'other-section-');
-});
-
-// Navigáció generálása funkcióval
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Elsõ szekció
-    const firstNavLinksContainer = document.getElementById('nav-links');
-    const firstTaskSection = document.getElementById('task-section');
-    generateNavigationLinks(firstNavLinksContainer, firstTaskSection, 'task-section-');
-
-    // Második szekció
-    const secondNavLinksContainer = document.getElementById('nav-linkss');
-    const secondTaskSection = document.getElementById('other-section');
-    generateNavigationLinks(secondNavLinksContainer, secondTaskSection, 'other-section-');
-});
-
-// Navigáció generálása funkcióval
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Elsõ szekció
     const firstNavLinksContainer = document.getElementById('H_K_nav_links');
     const firstTaskSection = document.getElementById('H_K_Panelhez_id');
     generateNavigationLinks(firstNavLinksContainer, firstTaskSection, 'H_K_Panelhez_id-');
 
-    // Második szekció
     const secondNavLinksContainer = document.getElementById('L_K_nav_links');
     const secondTaskSection = document.getElementById('L_K_Panelhez_id');
     generateNavigationLinks(secondNavLinksContainer, secondTaskSection, 'L_K_Panelhez_id-');
+
+    window.addEventListener('scroll', () => {
+        highlightActiveLink();
+    });
+
+    function highlightActiveLink() {
+        const headings = document.querySelectorAll('h2');
+        let closestHeading = null;
+
+        headings.forEach(heading => {
+            const rect = heading.getBoundingClientRect();
+
+            if (rect.top <= 0 && rect.bottom > 0) {
+                if (!closestHeading || rect.top > closestHeading.getBoundingClientRect().top) {
+                    closestHeading = heading;
+                }
+            }
+        });
+
+        if (closestHeading) {
+            document.querySelectorAll('.navigation_panel li').forEach(item => {
+                item.style.backgroundColor = '';
+            });
+
+            const activeLink = document.querySelector(`a[href="#${closestHeading.id}"]`).parentElement;
+            activeLink.style.backgroundColor = '#bcbcbc';
+        }
+    }
+
 });
 
 function generateNavigationLinks(navLinksContainer, taskSection, idPrefix) {
     if (!navLinksContainer || !taskSection) return;
 
-    navLinksContainer.innerHTML = ''; // Ürítsd ki a navigációs listát
+    navLinksContainer.innerHTML = '';
     const headings = taskSection.querySelectorAll('h2');
 
     headings.forEach((heading, index) => {
         if (!heading.id) {
-            heading.id = `${idPrefix}${index + 1}`; // Egyedi ID prefixszel
+            heading.id = `${idPrefix}${index + 1}`;
         }
 
         const link = document.createElement('a');
@@ -1053,3 +1052,9 @@ function generateNavigationLinks(navLinksContainer, taskSection, idPrefix) {
         });
     });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector('.Vissza_gomb').addEventListener('click', function () {
+        window.location.href = 'Index.html';
+    });
+});
